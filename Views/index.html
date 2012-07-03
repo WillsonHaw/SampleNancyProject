@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Index</title>
+    <link rel="stylesheet" href="content/css/styles.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="page-header">
+                    <h1>Create a User</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span12">
+                <form action="/api/user" method="POST" enctype="multipart/form-data" class="form-horizontal">
+                    <div class="control-group">
+                        <label class="control-label" for="input-username">User Name:</label>
+                        <div class="controls">
+                            <input type="text" id="input-username" class="input-large" placeholder="User Name" name="UserName" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="input-avatar">Avatar:</label>
+                        <div class="controls">
+                            <input type="file" id="input-avatar" class="input-large" name="Avatar" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="input-password">Password:</label>
+                        <div class="controls">
+                            <input type="password" id="input-password" class="input-large" placeholder="Password" name="Password" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="input-firstname">First Name:</label>
+                        <div class="controls">
+                            <input type="text" id="input-firstname" class="input-large" placeholder="First Name" name="FirstName" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="input-lastname">Last Name:</label>
+                        <div class="controls">
+                            <input type="text" id="input-lastname" class="input-large" placeholder="Last Name" name="LastName" />
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label" for="input-address">Address:</label>
+                        <div class="controls">
+                            <textarea id="input-address" placeholder="Address" name="Address"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-actions">
+                        <input type="submit" class="btn btn-primary" />    
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer class="footer">
+            <p><a href="/users">View All Users</a></p>
+        </footer>
+    </div>
+</body>
+</html>

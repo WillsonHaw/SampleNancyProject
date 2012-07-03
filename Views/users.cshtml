@@ -1,0 +1,81 @@
+﻿@using SampleNancyProject.Model
+@{
+    var Users = (System.Collections.Generic.IList<UserModel>)Model.Users;
+}
+
+<!doctype html>
+<html>
+    <head>
+        <title>Users</title>
+        
+        <link rel="stylesheet" href="content/css/styles.css" />
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <div class="page-header">
+                        <h1>Users</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>Avatar</th>
+                            <th>User Name</th>
+                            <th>Real Name</th>
+                            <th>Address</th>
+                            <th>Delete</th>
+                        </tr>
+                        @foreach (var user in Users)
+                        {
+                            <tr>
+                                <td>
+                                    @if (!string.IsNullOrEmpty(user.Avatar))
+                                    {
+                                        <a href="data:image/png;base64,@user.Avatar" class="thumbnail">
+                                            <img src="data:image/png;base64,@user.Avatar" alt="Avatar" title="Avatar" />
+                                        </a>
+                                    }
+                                </td>
+                                <td>@user.UserName</td>
+                                <td>@user.FirstName&nbsp;@user.LastName</td>
+                                <td>@user.Address</td>
+                                <td><a rel="@user.Id" href="#">Delete</a></td>
+                            </tr>
+                        }
+                    </table>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <p><a href="/">Create a User</a></p>
+            </footer>
+        </div>
+        
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var $links = $("table.table a");
+
+                $links.click(function (evt) {
+                    evt.preventDefault();
+
+                    if (confirm("Are you sure you want to delete this user?")) {
+                        var id = $(this).attr("rel");
+
+                        $.ajax({
+                            url: "/api/user/" + id,
+                            type: "DELETE",
+                            success: function() {
+                                window.location.href = "/";
+                            }
+                        });
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

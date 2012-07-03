@@ -1,0 +1,1442 @@
+time,logger,level,message,exception
+2012-07-03 10:37:57.1494,Raven.Database.Impl.DocumentCacher,Info,"MemoryCache Settings:
+  PhysicalMemoryLimit = 99
+  CacheMemoryLimit    = 3185573888
+  PollingInterval     = 00:02:00",
+2012-07-03 10:37:57.1984,Raven.Storage.Esent.TransactionalStorage,Info,"Esent Settings:
+  MaxVerPages      = 32768
+  CacheSizeMax     = 262144
+  DatabasePageSize = 4096",
+2012-07-03 10:37:58.0719,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Backup/Status' was not found,
+2012-07-03 10:37:58.1389,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 0, for: IndexingExecuter, will wait for additional work",
+2012-07-03 10:37:58.1389,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 0, for: ReducingExecuter, will wait for additional work",
+2012-07-03 10:38:19.1160,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Databases/SomeDB' was found,
+2012-07-03 10:38:19.2479,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Databases/SomeDB' was found,
+2012-07-03 10:38:19.3059,Raven.Database.Server.HttpServer,Debug,Request #   1: GET     -    80 ms - <default>  - 200 - /docs/Raven/Databases/SomeDB,
+2012-07-03 10:38:19.7147,Raven.Database.Impl.DocumentCacher,Info,"MemoryCache Settings:
+  PhysicalMemoryLimit = 99
+  CacheMemoryLimit    = 3185573888
+  PollingInterval     = 00:02:00",
+2012-07-03 10:38:19.7167,Raven.Storage.Esent.TransactionalStorage,Info,"Esent Settings:
+  MaxVerPages      = 32768
+  CacheSizeMax     = 262144
+  DatabasePageSize = 4096",
+2012-07-03 10:38:19.9885,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Backup/Status' was not found,
+2012-07-03 10:38:19.9975,Raven.Database.Indexing.IndexStorage,Info,Ignoring delete for non existing index Temp/UserModels,
+2012-07-03 10:38:19.9975,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 0, for: IndexingExecuter, will wait for additional work",
+2012-07-03 10:38:19.9975,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 0, for: ReducingExecuter, will wait for additional work",
+2012-07-03 10:38:20.0115,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-07-03 10:38:20.0115,Raven.Database.Server.HttpServer,Debug,Request #   2: GET     -   919 ms - SomeDB     - 404 - /docs/Raven/Replication/Destinations,
+2012-07-03 10:38:26.7182,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/UserModels' was found,
+2012-07-03 10:38:26.7182,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/ServerPrefixForHilo' was not found,
+2012-07-03 10:38:26.7801,Raven.Database.Server.HttpServer,Debug,Request #   3: GET     -    96 ms - SomeDB     - 200 - /queries/?&id=Raven/Hilo/UserModels&id=Raven/ServerPrefixForHilo,
+2012-07-03 10:38:26.9311,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'Raven/Hilo/UserModels', update: True, ",
+2012-07-03 10:38:26.9351,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 1 because: PUT Raven/Hilo/UserModels,
+2012-07-03 10:38:26.9351,Raven.Database.DocumentDatabase,Debug,Put document Raven/Hilo/UserModels with etag 00000000-0000-0500-0000-000000000001,
+2012-07-03 10:38:26.9351,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2012-07-03 10:38:26.9351,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2012-07-03 10:38:26.9351,Raven.Database.Server.HttpServer,Debug,Request #   4: PUT     -   128 ms - SomeDB     - 201 - /docs/Raven/Hilo/UserModels,
+2012-07-03 10:38:27.0370,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'UserModels/129', update: False, ",
+2012-07-03 10:38:27.0370,Raven.Database.DocumentDatabase,Debug,Put document UserModels/129 with etag 00000000-0000-0500-0000-000000000002,
+2012-07-03 10:38:27.0370,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 2 because: PUT UserModels/129,
+2012-07-03 10:38:27.0370,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 2, for: ReducingExecuter, will wait for additional work",
+2012-07-03 10:38:27.0370,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 2, for: IndexingExecuter, will wait for additional work",
+2012-07-03 10:38:27.0370,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0129873,
+2012-07-03 10:38:27.0490,Raven.Database.Server.HttpServer,Debug,Request #   5: POST    -    38 ms - SomeDB     - 200 - /bulk_docs,
+2012-07-03 10:38:27.0490,Raven.Database.Server.HttpServer,Debug,"	PUT UserModels/129
+",
+2012-07-03 10:38:27.7646,Raven.Database.Storage.IndexDefinitionStorage,Info,"New index Temp%2fUserModels:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using System.Globalization;
+using Raven.Database.Indexing;
+public class Index_Temp_2fUserModels : AbstractViewGenerator
+{
+	public Index_Temp_2fUserModels()
+	{
+		this.ViewText = @""from doc in docs.UserModels
+select new {  }
+"";
+		this.ForEntityNames.Add(""UserModels"");
+		this.AddMapDefinition(docs => from doc in docs
+			where doc[""@metadata""][""Raven-Entity-Name""] == ""UserModels""
+			select new { __document_id = doc.__document_id });
+		this.AddField(""__document_id"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+
+Compiled to:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using System.Globalization;
+using Raven.Database.Indexing;
+public class Index_Temp_2fUserModels : AbstractViewGenerator
+{
+	public Index_Temp_2fUserModels()
+	{
+		this.ViewText = @""from doc in docs.UserModels
+select new {  }
+"";
+		this.ForEntityNames.Add(""UserModels"");
+		this.AddMapDefinition(docs => from doc in docs
+			where doc[""@metadata""][""Raven-Entity-Name""] == ""UserModels""
+			select new { __document_id = doc.__document_id });
+		this.AddField(""__document_id"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+",
+2012-07-03 10:38:27.8116,Raven.Database.Indexing.IndexStorage,Info,Creating index Temp/UserModels with encoded name Temp/UserModels,
+2012-07-03 10:38:28.0285,Raven.Database.Indexing.Index.Indexing,Debug,Creating index for Temp/UserModels,
+2012-07-03 10:38:28.0435,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 3 because: PUT INDEX Temp/UserModels,
+2012-07-03 10:38:28.0435,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2012-07-03 10:38:28.0975,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 10:38:28.2184,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 10:38:28.3184,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 10:38:28.4183,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 10:38:28.4183,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 10 documents that requires indexing since etag: 00000000-0000-0000-0000-000000000000,
+2012-07-03 10:38:28.5223,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 10:38:28.5223,Raven.Database.Impl.DocumentRetriever,Debug,Triggered Raven.Database.Plugins.Builtins.FilterRavenInternalDocumentsReadTrigger asked us to ignore Raven/Hilo/UserModels,
+2012-07-03 10:38:28.5253,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 9 documents remained",
+2012-07-03 10:38:28.5413,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Going to index 9 documents in IndexName: Temp/UserModels, LastIndexedEtag: 00000000-0000-0000-0000-000000000000",
+2012-07-03 10:38:28.5413,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Indexing 9 documents for index: Temp/UserModels. (UserModels/1,UserModels/2,UserModels/3,UserModels/33,UserModels/34,UserModels/65,UserModels/66,UserModels/97,UserModels/129)",
+2012-07-03 10:38:28.6222,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 10:38:28.7222,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 10:38:28.7721,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/1 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/1
+",
+2012-07-03 10:38:28.8221,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 10:38:28.8881,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/2 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/2
+",
+2012-07-03 10:38:28.8881,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/3 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/3
+",
+2012-07-03 10:38:28.8881,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/33 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/33
+",
+2012-07-03 10:38:28.8881,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/34 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/34
+",
+2012-07-03 10:38:28.8881,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/65 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/65
+",
+2012-07-03 10:38:28.8881,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/66 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/66
+",
+2012-07-03 10:38:28.8881,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/97 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/97
+",
+2012-07-03 10:38:28.8881,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/129 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/129
+",
+2012-07-03 10:38:28.9221,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 10:38:29.0220,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 10:38:29.1220,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 10:38:29.1380,Raven.Database.Indexing.Index.Indexing,Debug,Indexed 27 documents for Temp/UserModels,
+2012-07-03 10:38:29.1539,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 4 because: WORK BY IndexingExecuter,
+2012-07-03 10:38:29.1539,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 4, for: ReducingExecuter, will wait for additional work",
+2012-07-03 10:38:29.1539,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 4, for: IndexingExecuter, will wait for additional work",
+2012-07-03 10:38:29.2249,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 10:38:29.2709,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/1' was found,
+2012-07-03 10:38:29.2749,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/2' was found,
+2012-07-03 10:38:29.2749,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/3' was found,
+2012-07-03 10:38:29.2749,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/33' was found,
+2012-07-03 10:38:29.2749,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/34' was found,
+2012-07-03 10:38:29.2749,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/65' was found,
+2012-07-03 10:38:29.2969,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/66' was found,
+2012-07-03 10:38:29.3069,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/97' was found,
+2012-07-03 10:38:29.4658,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/129' was found,
+2012-07-03 10:38:29.5438,Raven.Database.Server.HttpServer,Debug,"Request #   6: GET     - 2,431 ms - SomeDB     - 200 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None",
+2012-07-03 10:38:29.5438,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 2,344 ms
+	Index: Temp/UserModels
+	Results: 9 returned out of 9 total.
+",
+2012-07-03 10:38:53.9171,Raven.Database.Server.HttpServer,Debug,Request #   7: GET     -    26 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 10:38:53.9171,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 26 ms
+",
+2012-07-03 10:40:01.2106,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-07-03 10:40:01.2106,Raven.Database.Server.HttpServer,Debug,Request #   8: GET     -     0 ms - SomeDB     - 404 - /docs/Raven/Replication/Destinations,
+2012-07-03 10:40:01.3585,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Databases/SomeDB' was found,
+2012-07-03 10:40:01.3585,Raven.Database.Server.HttpServer,Debug,Request #   9: GET     -     1 ms - <default>  - 200 - /docs/Raven/Databases/SomeDB,
+2012-07-03 10:40:05.9482,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/UserModels' was found,
+2012-07-03 10:40:05.9482,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/ServerPrefixForHilo' was not found,
+2012-07-03 10:40:05.9482,Raven.Database.Server.HttpServer,Debug,Request #  10: GET     -     0 ms - SomeDB     - 200 - /queries/?&id=Raven/Hilo/UserModels&id=Raven/ServerPrefixForHilo,
+2012-07-03 10:40:05.9732,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'Raven/Hilo/UserModels', update: True, ",
+2012-07-03 10:40:05.9732,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 5 because: PUT Raven/Hilo/UserModels,
+2012-07-03 10:40:05.9732,Raven.Database.DocumentDatabase,Debug,Put document Raven/Hilo/UserModels with etag 00000000-0000-0500-0000-000000000003,
+2012-07-03 10:40:05.9732,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0500-0000-000000000002,
+2012-07-03 10:40:05.9732,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 5, for: ReducingExecuter, will wait for additional work",
+2012-07-03 10:40:05.9732,Raven.Database.Impl.DocumentRetriever,Debug,Triggered Raven.Database.Plugins.Builtins.FilterRavenInternalDocumentsReadTrigger asked us to ignore Raven/Hilo/UserModels,
+2012-07-03 10:40:05.9732,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 0 documents remained",
+2012-07-03 10:40:05.9732,Raven.Database.Server.HttpServer,Debug,Request #  11: PUT     -     4 ms - SomeDB     - 201 - /docs/Raven/Hilo/UserModels,
+2012-07-03 10:40:05.9732,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"All documents have been filtered for Temp/UserModels, no indexing will be performed, updating to 00000000-0000-0500-0000-000000000003, 03/07/2012 5:40:05 PM",
+2012-07-03 10:40:05.9732,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 6 because: WORK BY IndexingExecuter,
+2012-07-03 10:40:05.9732,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 6, for: ReducingExecuter, will wait for additional work",
+2012-07-03 10:40:05.9732,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 6, for: IndexingExecuter, will wait for additional work",
+2012-07-03 10:40:06.0522,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'UserModels/161', update: False, ",
+2012-07-03 10:40:06.0522,Raven.Database.DocumentDatabase,Debug,Put document UserModels/161 with etag 00000000-0000-0500-0000-000000000004,
+2012-07-03 10:40:06.0522,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 7 because: PUT UserModels/161,
+2012-07-03 10:40:06.0522,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0040061,
+2012-07-03 10:40:06.0522,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 7, for: ReducingExecuter, will wait for additional work",
+2012-07-03 10:40:06.0522,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0500-0000-000000000003,
+2012-07-03 10:40:06.0522,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 1 documents remained",
+2012-07-03 10:40:06.0522,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Going to index 1 documents in IndexName: Temp/UserModels, LastIndexedEtag: 00000000-0000-0500-0000-000000000003",
+2012-07-03 10:40:06.0522,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Indexing 1 documents for index: Temp/UserModels. (UserModels/161),
+2012-07-03 10:40:06.0522,Raven.Database.Server.HttpServer,Debug,Request #  12: POST    -     5 ms - SomeDB     - 200 - /bulk_docs,
+2012-07-03 10:40:06.0522,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/161 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/161
+",
+2012-07-03 10:40:06.0522,Raven.Database.Indexing.Index.Indexing,Debug,Indexed 3 documents for Temp/UserModels,
+2012-07-03 10:40:06.0522,Raven.Database.Server.HttpServer,Debug,"	PUT UserModels/161
+",
+2012-07-03 10:40:06.0522,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 8 because: WORK BY IndexingExecuter,
+2012-07-03 10:40:06.0522,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 8, for: ReducingExecuter, will wait for additional work",
+2012-07-03 10:40:06.0522,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 8, for: IndexingExecuter, will wait for additional work",
+2012-07-03 10:40:06.1191,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 10:40:06.1191,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/1' was found,
+2012-07-03 10:40:06.1191,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/2' was found,
+2012-07-03 10:40:06.1191,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/3' was found,
+2012-07-03 10:40:06.1191,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/33' was found,
+2012-07-03 10:40:06.1191,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/34' was found,
+2012-07-03 10:40:06.1191,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/65' was found,
+2012-07-03 10:40:06.1191,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/66' was found,
+2012-07-03 10:40:06.1191,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/97' was found,
+2012-07-03 10:40:06.1191,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/129' was found,
+2012-07-03 10:40:06.1191,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/161' was found,
+2012-07-03 10:40:06.1551,Raven.Database.Server.HttpServer,Debug,Request #  13: GET     -    37 ms - SomeDB     - 200 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 10:40:06.1551,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 1 ms
+	Index: Temp/UserModels
+	Results: 10 returned out of 10 total.
+",
+2012-07-03 10:40:58.4161,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-07-03 10:40:58.4161,Raven.Database.Server.HttpServer,Debug,Request #  14: GET     -     0 ms - SomeDB     - 404 - /docs/Raven/Replication/Destinations,
+2012-07-03 10:40:58.5690,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Databases/SomeDB' was found,
+2012-07-03 10:40:58.5690,Raven.Database.Server.HttpServer,Debug,Request #  15: GET     -     2 ms - <default>  - 200 - /docs/Raven/Databases/SomeDB,
+2012-07-03 10:41:03.7474,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/UserModels' was found,
+2012-07-03 10:41:03.7474,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/ServerPrefixForHilo' was not found,
+2012-07-03 10:41:03.7474,Raven.Database.Server.HttpServer,Debug,Request #  16: GET     -     0 ms - SomeDB     - 200 - /queries/?&id=Raven/Hilo/UserModels&id=Raven/ServerPrefixForHilo,
+2012-07-03 10:41:03.7764,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'Raven/Hilo/UserModels', update: True, ",
+2012-07-03 10:41:03.7764,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 9 because: PUT Raven/Hilo/UserModels,
+2012-07-03 10:41:03.7764,Raven.Database.DocumentDatabase,Debug,Put document Raven/Hilo/UserModels with etag 00000000-0000-0500-0000-000000000005,
+2012-07-03 10:41:03.7764,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0500-0000-000000000004,
+2012-07-03 10:41:03.7764,Raven.Database.Impl.DocumentRetriever,Debug,Triggered Raven.Database.Plugins.Builtins.FilterRavenInternalDocumentsReadTrigger asked us to ignore Raven/Hilo/UserModels,
+2012-07-03 10:41:03.7764,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 0 documents remained",
+2012-07-03 10:41:03.7764,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"All documents have been filtered for Temp/UserModels, no indexing will be performed, updating to 00000000-0000-0500-0000-000000000005, 03/07/2012 5:41:03 PM",
+2012-07-03 10:41:03.7764,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 9, for: ReducingExecuter, will wait for additional work",
+2012-07-03 10:41:03.7764,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 10 because: WORK BY IndexingExecuter,
+2012-07-03 10:41:03.7764,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 10, for: ReducingExecuter, will wait for additional work",
+2012-07-03 10:41:03.7764,Raven.Database.Server.HttpServer,Debug,Request #  17: PUT     -     4 ms - SomeDB     - 201 - /docs/Raven/Hilo/UserModels,
+2012-07-03 10:41:03.7764,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 10, for: IndexingExecuter, will wait for additional work",
+2012-07-03 10:41:03.8504,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'UserModels/193', update: False, ",
+2012-07-03 10:41:03.8504,Raven.Database.DocumentDatabase,Debug,Put document UserModels/193 with etag 00000000-0000-0500-0000-000000000006,
+2012-07-03 10:41:03.8504,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 11 because: PUT UserModels/193,
+2012-07-03 10:41:03.8504,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0039318,
+2012-07-03 10:41:03.8504,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 11, for: ReducingExecuter, will wait for additional work",
+2012-07-03 10:41:03.8504,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0500-0000-000000000005,
+2012-07-03 10:41:03.8504,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 1 documents remained",
+2012-07-03 10:41:03.8504,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Going to index 1 documents in IndexName: Temp/UserModels, LastIndexedEtag: 00000000-0000-0500-0000-000000000005",
+2012-07-03 10:41:03.8504,Raven.Database.Server.HttpServer,Debug,Request #  18: POST    -     5 ms - SomeDB     - 200 - /bulk_docs,
+2012-07-03 10:41:03.8504,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Indexing 1 documents for index: Temp/UserModels. (UserModels/193),
+2012-07-03 10:41:03.8504,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/193 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/193
+",
+2012-07-03 10:41:03.8504,Raven.Database.Indexing.Index.Indexing,Debug,Indexed 3 documents for Temp/UserModels,
+2012-07-03 10:41:03.8504,Raven.Database.Server.HttpServer,Debug,"	PUT UserModels/193
+",
+2012-07-03 10:41:03.8504,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 12 because: WORK BY IndexingExecuter,
+2012-07-03 10:41:03.8504,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 12, for: IndexingExecuter, will wait for additional work",
+2012-07-03 10:41:03.8504,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 12, for: ReducingExecuter, will wait for additional work",
+2012-07-03 10:41:03.9133,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 10:41:03.9133,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/1' was found,
+2012-07-03 10:41:03.9133,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/2' was found,
+2012-07-03 10:41:03.9133,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/3' was found,
+2012-07-03 10:41:03.9133,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/33' was found,
+2012-07-03 10:41:03.9133,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/34' was found,
+2012-07-03 10:41:03.9133,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/65' was found,
+2012-07-03 10:41:03.9133,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/66' was found,
+2012-07-03 10:41:03.9133,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/97' was found,
+2012-07-03 10:41:03.9133,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/129' was found,
+2012-07-03 10:41:03.9133,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/161' was found,
+2012-07-03 10:41:03.9133,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/193' was found,
+2012-07-03 10:41:03.9553,Raven.Database.Server.HttpServer,Debug,Request #  19: GET     -    40 ms - SomeDB     - 200 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 10:41:03.9573,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 1 ms
+	Index: Temp/UserModels
+	Results: 11 returned out of 11 total.
+",
+2012-07-03 10:42:30.8823,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-07-03 10:42:30.8823,Raven.Database.Server.HttpServer,Debug,Request #  20: GET     -     0 ms - SomeDB     - 404 - /docs/Raven/Replication/Destinations,
+2012-07-03 10:42:31.0203,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Databases/SomeDB' was found,
+2012-07-03 10:42:31.0203,Raven.Database.Server.HttpServer,Debug,Request #  21: GET     -     3 ms - <default>  - 200 - /docs/Raven/Databases/SomeDB,
+2012-07-03 10:42:34.9119,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/UserModels' was found,
+2012-07-03 10:42:34.9119,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/ServerPrefixForHilo' was not found,
+2012-07-03 10:42:34.9119,Raven.Database.Server.HttpServer,Debug,Request #  22: GET     -     0 ms - SomeDB     - 200 - /queries/?&id=Raven/Hilo/UserModels&id=Raven/ServerPrefixForHilo,
+2012-07-03 10:42:34.9489,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'Raven/Hilo/UserModels', update: True, ",
+2012-07-03 10:42:34.9489,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 13 because: PUT Raven/Hilo/UserModels,
+2012-07-03 10:42:34.9489,Raven.Database.DocumentDatabase,Debug,Put document Raven/Hilo/UserModels with etag 00000000-0000-0500-0000-000000000007,
+2012-07-03 10:42:34.9489,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0500-0000-000000000006,
+2012-07-03 10:42:34.9489,Raven.Database.Impl.DocumentRetriever,Debug,Triggered Raven.Database.Plugins.Builtins.FilterRavenInternalDocumentsReadTrigger asked us to ignore Raven/Hilo/UserModels,
+2012-07-03 10:42:34.9489,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 0 documents remained",
+2012-07-03 10:42:34.9489,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"All documents have been filtered for Temp/UserModels, no indexing will be performed, updating to 00000000-0000-0500-0000-000000000007, 03/07/2012 5:42:34 PM",
+2012-07-03 10:42:34.9489,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 13, for: ReducingExecuter, will wait for additional work",
+2012-07-03 10:42:34.9489,Raven.Database.Server.HttpServer,Debug,Request #  23: PUT     -     3 ms - SomeDB     - 201 - /docs/Raven/Hilo/UserModels,
+2012-07-03 10:42:34.9489,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 14 because: WORK BY IndexingExecuter,
+2012-07-03 10:42:34.9529,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 14, for: IndexingExecuter, will wait for additional work",
+2012-07-03 10:42:34.9529,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 14, for: ReducingExecuter, will wait for additional work",
+2012-07-03 10:42:35.0219,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'UserModels/225', update: False, ",
+2012-07-03 10:42:35.0219,Raven.Database.DocumentDatabase,Debug,Put document UserModels/225 with etag 00000000-0000-0500-0000-000000000008,
+2012-07-03 10:42:35.0219,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 15 because: PUT UserModels/225,
+2012-07-03 10:42:35.0219,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0038603,
+2012-07-03 10:42:35.0219,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0500-0000-000000000007,
+2012-07-03 10:42:35.0219,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 15, for: ReducingExecuter, will wait for additional work",
+2012-07-03 10:42:35.0219,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 1 documents remained",
+2012-07-03 10:42:35.0219,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Going to index 1 documents in IndexName: Temp/UserModels, LastIndexedEtag: 00000000-0000-0500-0000-000000000007",
+2012-07-03 10:42:35.0219,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Indexing 1 documents for index: Temp/UserModels. (UserModels/225),
+2012-07-03 10:42:35.0219,Raven.Database.Server.HttpServer,Debug,Request #  24: POST    -     7 ms - SomeDB     - 200 - /bulk_docs,
+2012-07-03 10:42:35.0219,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/225 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/225
+",
+2012-07-03 10:42:35.0219,Raven.Database.Indexing.Index.Indexing,Debug,Indexed 3 documents for Temp/UserModels,
+2012-07-03 10:42:35.0219,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 16 because: WORK BY IndexingExecuter,
+2012-07-03 10:42:35.0219,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 16, for: IndexingExecuter, will wait for additional work",
+2012-07-03 10:42:35.0219,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 16, for: ReducingExecuter, will wait for additional work",
+2012-07-03 10:42:35.0219,Raven.Database.Server.HttpServer,Debug,"	PUT UserModels/225
+",
+2012-07-03 10:42:35.0879,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 10:42:35.0879,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/1' was found,
+2012-07-03 10:42:35.0879,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/2' was found,
+2012-07-03 10:42:35.0879,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/3' was found,
+2012-07-03 10:42:35.0879,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/33' was found,
+2012-07-03 10:42:35.0879,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/34' was found,
+2012-07-03 10:42:35.0879,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/65' was found,
+2012-07-03 10:42:35.0879,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/66' was found,
+2012-07-03 10:42:35.0879,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/97' was found,
+2012-07-03 10:42:35.0879,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/129' was found,
+2012-07-03 10:42:35.0879,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/161' was found,
+2012-07-03 10:42:35.0879,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/193' was found,
+2012-07-03 10:42:35.0879,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/225' was found,
+2012-07-03 10:42:35.1129,Raven.Database.Server.HttpServer,Debug,Request #  25: GET     -    36 ms - SomeDB     - 200 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 10:42:35.1259,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 1 ms
+	Index: Temp/UserModels
+	Results: 12 returned out of 12 total.
+",
+2012-07-03 10:43:17.1254,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'UserModels/226', update: False, ",
+2012-07-03 10:43:17.1254,Raven.Database.DocumentDatabase,Debug,Put document UserModels/226 with etag 00000000-0000-0500-0000-000000000009,
+2012-07-03 10:43:17.1294,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 17 because: PUT UserModels/226,
+2012-07-03 10:43:17.1294,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0037042,
+2012-07-03 10:43:17.1294,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 17, for: ReducingExecuter, will wait for additional work",
+2012-07-03 10:43:17.1294,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0500-0000-000000000008,
+2012-07-03 10:43:17.1294,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 1 documents remained",
+2012-07-03 10:43:17.1294,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Going to index 1 documents in IndexName: Temp/UserModels, LastIndexedEtag: 00000000-0000-0500-0000-000000000008",
+2012-07-03 10:43:17.1294,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Indexing 1 documents for index: Temp/UserModels. (UserModels/226),
+2012-07-03 10:43:17.1294,Raven.Database.Server.HttpServer,Debug,Request #  26: POST    -     5 ms - SomeDB     - 200 - /bulk_docs,
+2012-07-03 10:43:17.1294,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/226 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/226
+",
+2012-07-03 10:43:17.1294,Raven.Database.Indexing.Index.Indexing,Debug,Indexed 3 documents for Temp/UserModels,
+2012-07-03 10:43:17.1294,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 18 because: WORK BY IndexingExecuter,
+2012-07-03 10:43:17.1294,Raven.Database.Server.HttpServer,Debug,"	PUT UserModels/226
+",
+2012-07-03 10:43:17.1294,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 18, for: ReducingExecuter, will wait for additional work",
+2012-07-03 10:43:17.1294,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 18, for: IndexingExecuter, will wait for additional work",
+2012-07-03 10:43:17.1294,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 10:43:17.1294,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/1' was found,
+2012-07-03 10:43:17.1294,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/2' was found,
+2012-07-03 10:43:17.1294,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/3' was found,
+2012-07-03 10:43:17.1294,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/33' was found,
+2012-07-03 10:43:17.1294,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/34' was found,
+2012-07-03 10:43:17.1294,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/65' was found,
+2012-07-03 10:43:17.1294,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/66' was found,
+2012-07-03 10:43:17.1294,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/97' was found,
+2012-07-03 10:43:17.1294,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/129' was found,
+2012-07-03 10:43:17.1454,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/161' was found,
+2012-07-03 10:43:17.1454,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/193' was found,
+2012-07-03 10:43:17.1454,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/225' was found,
+2012-07-03 10:43:17.1454,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/226' was found,
+2012-07-03 10:43:17.1794,Raven.Database.Server.HttpServer,Debug,Request #  27: GET     -    36 ms - SomeDB     - 200 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 10:43:17.1794,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 2 ms
+	Index: Temp/UserModels
+	Results: 13 returned out of 13 total.
+",
+2012-07-03 10:43:19.9531,Raven.Database.Server.HttpServer,Debug,Request #  28: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 10:43:19.9531,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 10:43:20.9080,Raven.Database.Server.HttpServer,Debug,Request #  29: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 10:43:20.9080,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 10:43:34.7166,Raven.Database.Server.HttpServer,Debug,Request #  30: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 10:43:34.7166,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 10:43:50.2667,Raven.Database.Server.HttpServer,Debug,Request #  31: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 10:43:50.2667,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 10:43:51.5106,Raven.Database.Server.HttpServer,Debug,Request #  32: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 10:43:51.5106,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 10:44:00.4877,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'UserModels/227', update: False, ",
+2012-07-03 10:44:00.4877,Raven.Database.DocumentDatabase,Debug,Put document UserModels/227 with etag 00000000-0000-0500-0000-00000000000a,
+2012-07-03 10:44:00.4877,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 19 because: PUT UserModels/227,
+2012-07-03 10:44:00.4877,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0061282,
+2012-07-03 10:44:00.4877,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 19, for: ReducingExecuter, will wait for additional work",
+2012-07-03 10:44:00.4877,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0500-0000-000000000009,
+2012-07-03 10:44:00.4877,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 1 documents remained",
+2012-07-03 10:44:00.4877,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Going to index 1 documents in IndexName: Temp/UserModels, LastIndexedEtag: 00000000-0000-0500-0000-000000000009",
+2012-07-03 10:44:00.4907,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Indexing 1 documents for index: Temp/UserModels. (UserModels/227),
+2012-07-03 10:44:00.4907,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/227 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/227
+",
+2012-07-03 10:44:00.4877,Raven.Database.Server.HttpServer,Debug,Request #  33: POST    -     8 ms - SomeDB     - 200 - /bulk_docs,
+2012-07-03 10:44:00.4907,Raven.Database.Indexing.Index.Indexing,Debug,Indexed 3 documents for Temp/UserModels,
+2012-07-03 10:44:00.4907,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 20 because: WORK BY IndexingExecuter,
+2012-07-03 10:44:00.4907,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 20, for: ReducingExecuter, will wait for additional work",
+2012-07-03 10:44:00.4907,Raven.Database.Server.HttpServer,Debug,"	PUT UserModels/227
+",
+2012-07-03 10:44:00.4907,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 20, for: IndexingExecuter, will wait for additional work",
+2012-07-03 10:44:00.4907,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 10:44:00.4907,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/1' was found,
+2012-07-03 10:44:00.4907,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/2' was found,
+2012-07-03 10:44:00.4907,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/3' was found,
+2012-07-03 10:44:00.4907,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/33' was found,
+2012-07-03 10:44:00.4907,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/34' was found,
+2012-07-03 10:44:00.4907,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/65' was found,
+2012-07-03 10:44:00.4907,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/66' was found,
+2012-07-03 10:44:00.4907,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/97' was found,
+2012-07-03 10:44:00.4907,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/129' was found,
+2012-07-03 10:44:00.4907,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/161' was found,
+2012-07-03 10:44:00.4907,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/193' was found,
+2012-07-03 10:44:00.4907,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/225' was found,
+2012-07-03 10:44:00.4907,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/226' was found,
+2012-07-03 10:44:00.4907,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/227' was found,
+2012-07-03 10:44:00.5267,Raven.Database.Server.HttpServer,Debug,Request #  34: GET     -    37 ms - SomeDB     - 200 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 10:44:00.5377,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 2 ms
+	Index: Temp/UserModels
+	Results: 14 returned out of 14 total.
+",
+2012-07-03 10:49:25.2355,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-07-03 10:49:25.2355,Raven.Database.Server.HttpServer,Debug,Request #  35: GET     -     0 ms - SomeDB     - 404 - /docs/Raven/Replication/Destinations,
+2012-07-03 10:49:25.3247,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Databases/SomeDB' was found,
+2012-07-03 10:49:25.3247,Raven.Database.Server.HttpServer,Debug,Request #  36: GET     -     0 ms - <default>  - 200 - /docs/Raven/Databases/SomeDB,
+2012-07-03 10:49:26.4957,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 10:49:26.4957,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/1' was found,
+2012-07-03 10:49:26.4957,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/2' was found,
+2012-07-03 10:49:26.4957,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/3' was found,
+2012-07-03 10:49:26.4957,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/33' was found,
+2012-07-03 10:49:26.4957,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/34' was found,
+2012-07-03 10:49:26.4977,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/65' was found,
+2012-07-03 10:49:26.4977,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/66' was found,
+2012-07-03 10:49:26.5167,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/97' was found,
+2012-07-03 10:49:26.6797,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/129' was found,
+2012-07-03 10:49:26.6797,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/161' was found,
+2012-07-03 10:49:26.6797,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/193' was found,
+2012-07-03 10:49:26.6797,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/225' was found,
+2012-07-03 10:49:26.6797,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/226' was found,
+2012-07-03 10:49:26.6797,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/227' was found,
+2012-07-03 10:49:26.7277,Raven.Database.Server.HttpServer,Debug,Request #  37: GET     -   233 ms - SomeDB     - 200 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 10:49:26.7277,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 192 ms
+	Index: Temp/UserModels
+	Results: 14 returned out of 14 total.
+",
+2012-07-03 10:49:30.1657,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-07-03 10:49:30.1657,Raven.Database.Server.HttpServer,Debug,Request #  38: GET     -     0 ms - SomeDB     - 404 - /docs/Raven/Replication/Destinations,
+2012-07-03 10:49:30.3117,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Databases/SomeDB' was found,
+2012-07-03 10:49:30.3117,Raven.Database.Server.HttpServer,Debug,Request #  39: GET     -     3 ms - <default>  - 200 - /docs/Raven/Databases/SomeDB,
+2012-07-03 10:49:31.7347,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 10:49:31.7347,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/1' was found,
+2012-07-03 10:49:31.7347,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/2' was found,
+2012-07-03 10:49:31.7347,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/3' was found,
+2012-07-03 10:49:31.7347,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/33' was found,
+2012-07-03 10:49:31.7347,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/34' was found,
+2012-07-03 10:49:31.7347,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/65' was found,
+2012-07-03 10:49:31.7347,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/66' was found,
+2012-07-03 10:49:31.7347,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/97' was found,
+2012-07-03 10:49:31.7347,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/129' was found,
+2012-07-03 10:49:31.7347,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/161' was found,
+2012-07-03 10:49:31.7347,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/193' was found,
+2012-07-03 10:49:31.7347,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/225' was found,
+2012-07-03 10:49:31.7347,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/226' was found,
+2012-07-03 10:49:31.7347,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/227' was found,
+2012-07-03 10:49:31.7737,Raven.Database.Server.HttpServer,Debug,Request #  40: GET     -    40 ms - SomeDB     - 200 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 10:49:31.7737,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 1 ms
+	Index: Temp/UserModels
+	Results: 14 returned out of 14 total.
+",
+2012-07-03 10:51:26.0672,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-07-03 10:51:26.0672,Raven.Database.Server.HttpServer,Debug,Request #  41: GET     -     0 ms - SomeDB     - 404 - /docs/Raven/Replication/Destinations,
+2012-07-03 10:51:26.1392,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Databases/SomeDB' was found,
+2012-07-03 10:51:26.1392,Raven.Database.Server.HttpServer,Debug,Request #  42: GET     -     4 ms - <default>  - 200 - /docs/Raven/Databases/SomeDB,
+2012-07-03 10:51:27.6412,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 10:51:27.6412,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/1' was found,
+2012-07-03 10:51:27.6412,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/2' was found,
+2012-07-03 10:51:27.6412,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/3' was found,
+2012-07-03 10:51:27.6412,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/33' was found,
+2012-07-03 10:51:27.6412,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/34' was found,
+2012-07-03 10:51:27.6412,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/65' was found,
+2012-07-03 10:51:27.6412,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/66' was found,
+2012-07-03 10:51:27.6412,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/97' was found,
+2012-07-03 10:51:27.6412,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/129' was found,
+2012-07-03 10:51:27.6412,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/161' was found,
+2012-07-03 10:51:27.6412,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/193' was found,
+2012-07-03 10:51:27.6412,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/225' was found,
+2012-07-03 10:51:27.6412,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/226' was found,
+2012-07-03 10:51:27.6412,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/227' was found,
+2012-07-03 10:51:27.6752,Raven.Database.Server.HttpServer,Debug,Request #  43: GET     -    40 ms - SomeDB     - 200 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 10:51:27.6752,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 2 ms
+	Index: Temp/UserModels
+	Results: 14 returned out of 14 total.
+",
+2012-07-03 10:51:34.9722,Raven.Database.Server.HttpServer,Debug,Request #  44: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 10:51:34.9742,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 10:52:11.0891,Raven.Database.Server.HttpServer,Debug,Request #  45: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 10:52:11.0891,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 10:52:12.1983,Raven.Database.Server.HttpServer,Debug,Request #  46: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 10:52:12.1983,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 10:52:15.3663,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-07-03 10:52:15.3663,Raven.Database.Server.HttpServer,Debug,Request #  47: GET     -     0 ms - SomeDB     - 404 - /docs/Raven/Replication/Destinations,
+2012-07-03 10:52:15.5303,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Databases/SomeDB' was found,
+2012-07-03 10:52:15.5313,Raven.Database.Server.HttpServer,Debug,Request #  48: GET     -     3 ms - <default>  - 200 - /docs/Raven/Databases/SomeDB,
+2012-07-03 10:52:16.9623,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 10:52:16.9623,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/1' was found,
+2012-07-03 10:52:16.9623,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/2' was found,
+2012-07-03 10:52:16.9623,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/3' was found,
+2012-07-03 10:52:16.9623,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/33' was found,
+2012-07-03 10:52:16.9623,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/34' was found,
+2012-07-03 10:52:16.9623,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/65' was found,
+2012-07-03 10:52:16.9623,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/66' was found,
+2012-07-03 10:52:16.9623,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/97' was found,
+2012-07-03 10:52:16.9623,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/129' was found,
+2012-07-03 10:52:16.9623,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/161' was found,
+2012-07-03 10:52:16.9623,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/193' was found,
+2012-07-03 10:52:16.9623,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/225' was found,
+2012-07-03 10:52:16.9623,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/226' was found,
+2012-07-03 10:52:16.9623,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/227' was found,
+2012-07-03 10:52:17.0003,Raven.Database.Server.HttpServer,Debug,Request #  49: GET     -    38 ms - SomeDB     - 200 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 10:52:17.0003,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 1 ms
+	Index: Temp/UserModels
+	Results: 14 returned out of 14 total.
+",
+2012-07-03 10:52:18.5753,Raven.Database.Server.HttpServer,Debug,Request #  50: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 10:52:18.5753,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 10:52:51.0304,Raven.Database.Server.HttpServer,Debug,Request #  51: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 10:52:51.0304,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 10:53:02.4064,Raven.Database.Server.HttpServer,Debug,Request #  52: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 10:53:02.4064,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 10:53:03.7634,Raven.Database.Server.HttpServer,Debug,Request #  53: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 10:53:03.7634,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:08:58.3866,Raven.Database.Indexing.WorkContext,Debug,Stopping background workers,
+2012-07-03 11:09:34.3242,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Databases/SomeDB' was found,
+2012-07-03 11:09:34.3532,Raven.Database.Impl.DocumentCacher,Info,"MemoryCache Settings:
+  PhysicalMemoryLimit = 99
+  CacheMemoryLimit    = 3185573888
+  PollingInterval     = 00:02:00",
+2012-07-03 11:09:34.3532,Raven.Storage.Esent.TransactionalStorage,Info,"Esent Settings:
+  MaxVerPages      = 32768
+  CacheSizeMax     = 262144
+  DatabasePageSize = 4096",
+2012-07-03 11:09:34.6133,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Databases/SomeDB' was found,
+2012-07-03 11:09:34.6133,Raven.Database.Server.HttpServer,Debug,Request #  54: GET     -     0 ms - <default>  - 200 - /docs/Raven/Databases/SomeDB,
+2012-07-03 11:09:34.6333,Raven.Database.Storage.IndexDefinitionStorage,Info,"New index Temp%2fUserModels:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using System.Globalization;
+using Raven.Database.Indexing;
+public class Index_Temp_2fUserModels : AbstractViewGenerator
+{
+	public Index_Temp_2fUserModels()
+	{
+		this.ViewText = @""from doc in docs.UserModels
+select new {  }
+"";
+		this.ForEntityNames.Add(""UserModels"");
+		this.AddMapDefinition(docs => from doc in docs
+			where doc[""@metadata""][""Raven-Entity-Name""] == ""UserModels""
+			select new { __document_id = doc.__document_id });
+		this.AddField(""__document_id"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+
+Compiled to:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using System.Globalization;
+using Raven.Database.Indexing;
+public class Index_Temp_2fUserModels : AbstractViewGenerator
+{
+	public Index_Temp_2fUserModels()
+	{
+		this.ViewText = @""from doc in docs.UserModels
+select new {  }
+"";
+		this.ForEntityNames.Add(""UserModels"");
+		this.AddMapDefinition(docs => from doc in docs
+			where doc[""@metadata""][""Raven-Entity-Name""] == ""UserModels""
+			select new { __document_id = doc.__document_id });
+		this.AddField(""__document_id"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+",
+2012-07-03 11:09:34.6483,Raven.Database.Indexing.IndexStorage.Startup,Debug,Loading saved index Temp/UserModels,
+2012-07-03 11:09:34.6483,Raven.Database.Indexing.Index.Indexing,Debug,Creating index for Temp/UserModels,
+2012-07-03 11:09:34.6483,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Backup/Status' was not found,
+2012-07-03 11:09:34.6483,Raven.Database.Indexing.IndexStorage,Info,Deleting index Temp/UserModels,
+2012-07-03 11:09:34.6483,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 1 because: DELETE INDEX Temp/UserModels,
+2012-07-03 11:09:34.6483,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-07-03 11:09:34.6483,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 1, for: IndexingExecuter, will wait for additional work",
+2012-07-03 11:09:34.6483,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 1, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:09:34.6483,Raven.Database.Server.HttpServer,Debug,Request #  55: GET     -   338 ms - SomeDB     - 404 - /docs/Raven/Replication/Destinations,
+2012-07-03 11:09:36.6635,Raven.Database.Storage.IndexDefinitionStorage,Info,"New index Temp%2fUserModels:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using System.Globalization;
+using Raven.Database.Indexing;
+public class Index_Temp_2fUserModels : AbstractViewGenerator
+{
+	public Index_Temp_2fUserModels()
+	{
+		this.ViewText = @""from doc in docs.UserModels
+select new {  }
+"";
+		this.ForEntityNames.Add(""UserModels"");
+		this.AddMapDefinition(docs => from doc in docs
+			where doc[""@metadata""][""Raven-Entity-Name""] == ""UserModels""
+			select new { __document_id = doc.__document_id });
+		this.AddField(""__document_id"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+
+Compiled to:
+using Raven.Abstractions;
+using Raven.Database.Linq;
+using System.Linq;
+using System.Collections.Generic;
+using System.Collections;
+using System;
+using Raven.Database.Linq.PrivateExtensions;
+using Lucene.Net.Documents;
+using System.Globalization;
+using Raven.Database.Indexing;
+public class Index_Temp_2fUserModels : AbstractViewGenerator
+{
+	public Index_Temp_2fUserModels()
+	{
+		this.ViewText = @""from doc in docs.UserModels
+select new {  }
+"";
+		this.ForEntityNames.Add(""UserModels"");
+		this.AddMapDefinition(docs => from doc in docs
+			where doc[""@metadata""][""Raven-Entity-Name""] == ""UserModels""
+			select new { __document_id = doc.__document_id });
+		this.AddField(""__document_id"");
+		this.AddQueryParameterForMap(""__document_id"");
+		this.AddQueryParameterForReduce(""__document_id"");
+	}
+}
+",
+2012-07-03 11:09:36.6635,Raven.Database.Indexing.IndexStorage,Info,Creating index Temp/UserModels with encoded name Temp/UserModels,
+2012-07-03 11:09:36.6635,Raven.Database.Indexing.Index.Indexing,Debug,Creating index for Temp/UserModels,
+2012-07-03 11:09:36.6785,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 2 because: PUT INDEX Temp/UserModels,
+2012-07-03 11:09:36.6785,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 2, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:09:36.6785,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 11:09:36.7805,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 11:09:36.8695,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 15 documents that requires indexing since etag: 00000000-0000-0000-0000-000000000000,
+2012-07-03 11:09:36.8695,Raven.Database.Impl.DocumentRetriever,Debug,Triggered Raven.Database.Plugins.Builtins.FilterRavenInternalDocumentsReadTrigger asked us to ignore Raven/Hilo/UserModels,
+2012-07-03 11:09:36.8695,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 14 documents remained",
+2012-07-03 11:09:36.8695,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Going to index 14 documents in IndexName: Temp/UserModels, LastIndexedEtag: 00000000-0000-0000-0000-000000000000",
+2012-07-03 11:09:36.8695,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Indexing 14 documents for index: Temp/UserModels. (UserModels/1,UserModels/2,UserModels/3,UserModels/33,UserModels/34,UserModels/65,UserModels/66,UserModels/97,UserModels/129,UserModels/161,UserModels/193,UserModels/225,UserModels/226,UserModels/227)",
+2012-07-03 11:09:36.8695,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/1 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/1
+",
+2012-07-03 11:09:36.8695,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/2 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/2
+",
+2012-07-03 11:09:36.8695,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/3 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/3
+",
+2012-07-03 11:09:36.8695,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/33 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/33
+",
+2012-07-03 11:09:36.8695,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/34 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/34
+",
+2012-07-03 11:09:36.8695,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/65 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/65
+",
+2012-07-03 11:09:36.8695,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/66 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/66
+",
+2012-07-03 11:09:36.8695,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/97 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/97
+",
+2012-07-03 11:09:36.8695,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/129 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/129
+",
+2012-07-03 11:09:36.8695,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/161 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/161
+",
+2012-07-03 11:09:36.8695,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/193 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/193
+",
+2012-07-03 11:09:36.8695,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/225 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/225
+",
+2012-07-03 11:09:36.8695,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/226 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/226
+",
+2012-07-03 11:09:36.8695,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/227 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/227
+",
+2012-07-03 11:09:36.8695,Raven.Database.Indexing.Index.Indexing,Debug,Indexed 42 documents for Temp/UserModels,
+2012-07-03 11:09:36.8695,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 3 because: WORK BY IndexingExecuter,
+2012-07-03 11:09:36.8775,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 3, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:09:36.8775,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 3, for: IndexingExecuter, will wait for additional work",
+2012-07-03 11:09:36.8775,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 11:09:36.8775,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/1' was found,
+2012-07-03 11:09:36.8775,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/2' was found,
+2012-07-03 11:09:36.8775,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/3' was found,
+2012-07-03 11:09:36.8775,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/33' was found,
+2012-07-03 11:09:36.8775,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/34' was found,
+2012-07-03 11:09:36.8935,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/65' was found,
+2012-07-03 11:09:36.8935,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/66' was found,
+2012-07-03 11:09:36.8935,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/97' was found,
+2012-07-03 11:09:37.0205,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/129' was found,
+2012-07-03 11:09:37.0205,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/161' was found,
+2012-07-03 11:09:37.0205,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/193' was found,
+2012-07-03 11:09:37.0205,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/225' was found,
+2012-07-03 11:09:37.0205,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/226' was found,
+2012-07-03 11:09:37.0205,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/227' was found,
+2012-07-03 11:09:37.0655,Raven.Database.Server.HttpServer,Debug,Request #  56: GET     -   402 ms - SomeDB     - 200 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:09:37.0655,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 360 ms
+	Index: Temp/UserModels
+	Results: 14 returned out of 14 total.
+",
+2012-07-03 11:09:53.3629,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-07-03 11:09:53.3629,Raven.Database.Server.HttpServer,Debug,Request #  57: GET     -     0 ms - SomeDB     - 404 - /docs/Raven/Replication/Destinations,
+2012-07-03 11:09:53.5109,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Databases/SomeDB' was found,
+2012-07-03 11:09:53.5109,Raven.Database.Server.HttpServer,Debug,Request #  58: GET     -     3 ms - <default>  - 200 - /docs/Raven/Databases/SomeDB,
+2012-07-03 11:10:00.1666,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 11:10:00.1666,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/1' was found,
+2012-07-03 11:10:00.1666,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/2' was found,
+2012-07-03 11:10:00.1666,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/3' was found,
+2012-07-03 11:10:00.1666,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/33' was found,
+2012-07-03 11:10:00.1666,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/34' was found,
+2012-07-03 11:10:00.1666,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/65' was found,
+2012-07-03 11:10:00.1666,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/66' was found,
+2012-07-03 11:10:00.1666,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/97' was found,
+2012-07-03 11:10:00.1666,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/129' was found,
+2012-07-03 11:10:00.1666,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/161' was found,
+2012-07-03 11:10:00.1666,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/193' was found,
+2012-07-03 11:10:00.1666,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/225' was found,
+2012-07-03 11:10:00.1666,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/226' was found,
+2012-07-03 11:10:00.1666,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/227' was found,
+2012-07-03 11:10:00.2056,Raven.Database.Server.HttpServer,Debug,Request #  59: GET     -    39 ms - SomeDB     - 200 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:10:00.2056,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 1 ms
+	Index: Temp/UserModels
+	Results: 14 returned out of 14 total.
+",
+2012-07-03 11:10:02.4078,Raven.Database.Server.HttpServer,Debug,Request #  60: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:10:02.4078,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:11:27.1745,Raven.Database.Server.HttpServer,Debug,Request #  61: GET     -     1 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:11:27.1775,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:11:48.5367,Raven.Database.Server.HttpServer,Debug,Request #  62: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:11:48.5367,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:12:13.0242,Raven.Database.Server.HttpServer,Debug,Request #  63: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:12:13.0252,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:12:19.5388,Raven.Database.Server.HttpServer,Debug,Request #  64: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:12:19.5388,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:13:00.7294,Raven.Database.Server.HttpServer,Debug,Request #  65: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:13:00.7334,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:13:50.3395,Raven.Database.Server.HttpServer,Debug,Request #  66: GET     -     1 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:13:50.3395,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:13:51.9617,Raven.Database.Server.HttpServer,Debug,Request #  67: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:13:51.9617,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:13:56.6151,Raven.Database.Server.HttpServer,Debug,Request #  68: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:13:56.6151,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:13:57.8192,Raven.Database.Server.HttpServer,Debug,Request #  69: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:13:57.8192,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:14:07.2232,Raven.Database.Server.HttpServer,Debug,Request #  70: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:14:07.2232,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:14:15.6505,Raven.Database.Server.HttpServer,Debug,Request #  71: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:14:15.6505,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:14:59.2809,Raven.Database.Server.HttpServer,Debug,Request #  72: GET     -     1 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:14:59.2829,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:14:59.3019,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-07-03 11:14:59.3019,Raven.Database.Server.HttpServer,Debug,Request #  73: GET     -     0 ms - SomeDB     - 404 - /docs/Raven/Replication/Destinations,
+2012-07-03 11:15:05.4587,Raven.Database.Server.HttpServer,Debug,Request #  74: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:15:05.4587,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:15:25.6408,Raven.Database.Server.HttpServer,Debug,Request #  75: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:15:25.6408,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:15:27.6010,Raven.Database.Server.HttpServer,Debug,Request #  76: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:15:27.6010,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:15:34.5107,Raven.Database.Server.HttpServer,Debug,Request #  77: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:15:34.5107,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:15:46.8869,Raven.Database.Server.HttpServer,Debug,Request #  78: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:15:46.8869,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:17:04.6087,Raven.Database.Server.HttpServer,Debug,Request #  79: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:17:04.6087,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:17:44.5704,Raven.Database.Server.HttpServer,Debug,Request #  80: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:17:44.5704,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:17:46.3785,Raven.Database.Server.HttpServer,Debug,Request #  81: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:17:46.3785,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:17:57.9457,Raven.Database.Indexing.IndexStorage,Info,Deleting index Temp/UserModels,
+2012-07-03 11:17:57.9457,Raven.Database.Indexing.DefaultBackgroundTaskExecuter,Error,Could not execute repeated task,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Raven.Database.Indexing.IndexSearcherHolder.IndexSearcherHoldingState.DisposeRudely() in c:\Builds\RavenDB-Stable\Raven.Database\Indexing\IndexSearcherHolder.cs:line 73
+   at Raven.Database.Indexing.IndexSearcherHolder.IndexSearcherHoldingState.Dispose() in c:\Builds\RavenDB-Stable\Raven.Database\Indexing\IndexSearcherHolder.cs:line 68
+   at Raven.Database.Indexing.IndexSearcherHolder.SetIndexSearcher(IndexSearcher searcher) in c:\Builds\RavenDB-Stable\Raven.Database\Indexing\IndexSearcherHolder.cs:line 25
+   at Raven.Database.Indexing.Index.Dispose() in c:\Builds\RavenDB-Stable\Raven.Database\Indexing\Index.cs:line 99
+   at Raven.Database.Indexing.IndexStorage.DeleteIndex(String name) in c:\Builds\RavenDB-Stable\Raven.Database\Indexing\IndexStorage.cs:line 259
+   at Raven.Database.DocumentDatabase.DeleteIndex(String name) in c:\Builds\RavenDB-Stable\Raven.Database\DocumentDatabase.cs:line 888
+   at Raven.Database.Queries.DynamicQueryRunner.CleanupCache() in c:\Builds\RavenDB-Stable\Raven.Database\Queries\DynamicQueryRunner.cs:line 131
+   at Raven.Database.Plugins.Builtins.CleanupOldDynamicIndexes.Execute() in c:\Builds\RavenDB-Stable\Raven.Database\Plugins\Builtins\CleanupOldDynamicIndexes.cs:line 43
+   at Raven.Database.Indexing.DefaultBackgroundTaskExecuter.ExecuteTimer(Object state) in c:\Builds\RavenDB-Stable\Raven.Database\Indexing\DefaultBackgroundTaskExecuter.cs:line 61"
+2012-07-03 11:19:41.8041,Raven.Database.Server.HttpServer,Debug,Request #  82: GET     -     3 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:19:41.8041,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 3 ms
+",
+2012-07-03 11:21:05.6957,Raven.Database.Server.HttpServer,Debug,Request #  83: GET     -     3 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:21:05.6957,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 3 ms
+",
+2012-07-03 11:21:05.7007,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-07-03 11:21:05.7007,Raven.Database.Server.HttpServer,Debug,Request #  84: GET     -     0 ms - SomeDB     - 404 - /docs/Raven/Replication/Destinations,
+2012-07-03 11:21:15.6344,Raven.Database.Server.HttpServer,Debug,Request #  85: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:21:15.6364,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:21:24.8434,Raven.Database.Server.HttpServer,Debug,Request #  86: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:21:24.8434,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:21:31.0170,Raven.Database.Server.HttpServer,Debug,Request #  87: GET     -     2 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:21:31.0180,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 2 ms
+",
+2012-07-03 11:23:41.3809,Raven.Database.Server.HttpServer,Debug,Request #  88: GET     -     1 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:23:41.3809,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:25:18.3878,Raven.Database.Server.HttpServer,Debug,Request #  89: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:25:18.3878,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:25:19.5009,Raven.Database.Server.HttpServer,Debug,Request #  90: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:25:19.5009,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:28:37.6437,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-07-03 11:28:37.6437,Raven.Database.Server.HttpServer,Debug,Request #  91: GET     -     0 ms - SomeDB     - 404 - /docs/Raven/Replication/Destinations,
+2012-07-03 11:28:37.6437,Raven.Database.Server.HttpServer,Debug,Request #  92: GET     -     3 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:28:37.6437,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 2 ms
+",
+2012-07-03 11:28:50.3300,Raven.Database.Server.HttpServer,Debug,Request #  93: GET     -     3 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:28:50.3300,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 2 ms
+",
+2012-07-03 11:29:02.3442,Raven.Database.Server.HttpServer,Debug,Request #  94: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:29:02.3442,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:31:00.5330,Raven.Database.Server.HttpServer,Debug,Request #  95: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:31:00.5330,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:31:38.6959,Raven.Database.Server.HttpServer,Debug,Request #  96: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:31:38.6989,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:34:33.9171,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-07-03 11:34:33.9171,Raven.Database.Server.HttpServer,Debug,Request #  97: GET     -     0 ms - SomeDB     - 404 - /docs/Raven/Replication/Destinations,
+2012-07-03 11:34:34.0691,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Databases/SomeDB' was found,
+2012-07-03 11:34:34.0691,Raven.Database.Server.HttpServer,Debug,Request #  98: GET     -     3 ms - <default>  - 200 - /docs/Raven/Databases/SomeDB,
+2012-07-03 11:34:43.4361,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 11:34:43.4361,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/1' was found,
+2012-07-03 11:34:43.4361,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/2' was found,
+2012-07-03 11:34:43.4361,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/3' was found,
+2012-07-03 11:34:43.4361,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/33' was found,
+2012-07-03 11:34:43.4441,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/34' was found,
+2012-07-03 11:34:43.4441,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/65' was found,
+2012-07-03 11:34:43.4441,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/66' was found,
+2012-07-03 11:34:43.4581,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/97' was found,
+2012-07-03 11:34:43.5701,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/129' was found,
+2012-07-03 11:34:43.5701,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/161' was found,
+2012-07-03 11:34:43.5701,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/193' was found,
+2012-07-03 11:34:43.5701,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/225' was found,
+2012-07-03 11:34:43.5701,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/226' was found,
+2012-07-03 11:34:43.5701,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/227' was found,
+2012-07-03 11:34:43.6311,Raven.Database.Server.HttpServer,Debug,Request #  99: GET     -   196 ms - SomeDB     - 200 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:34:43.6311,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 142 ms
+	Index: Temp/UserModels
+	Results: 14 returned out of 14 total.
+",
+2012-07-03 11:37:57.9641,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 0, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:37:57.9641,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 0, for: IndexingExecuter, will wait for additional work",
+2012-07-03 11:37:59.5211,Raven.Database.Server.HttpServer,Debug,Request # 100: GET     -     5 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:37:59.5221,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 4 ms
+",
+2012-07-03 11:38:02.6221,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key '33' was not found,
+2012-07-03 11:38:02.6221,Raven.Database.Server.HttpServer,Debug,Request # 101: GET     -     1 ms - SomeDB     - 404 - /docs/33,
+2012-07-03 11:38:26.5801,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key '1' was not found,
+2012-07-03 11:38:26.5801,Raven.Database.Server.HttpServer,Debug,Request # 102: GET     -     2 ms - SomeDB     - 404 - /docs/1,
+2012-07-03 11:38:40.6181,Raven.Database.Server.HttpServer,Debug,Request # 103: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:38:40.6181,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:38:45.5901,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/1' was found,
+2012-07-03 11:38:45.5901,Raven.Database.Server.HttpServer,Debug,Request # 104: GET     -     0 ms - SomeDB     - 200 - /docs/UserModels/1,
+2012-07-03 11:38:51.5371,Raven.Database.DocumentDatabase,Debug,Delete a document with key: UserModels/1 and etag ,
+2012-07-03 11:38:51.5471,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/1' was deleted,
+2012-07-03 11:38:51.5471,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 4 because: DEL UserModels/1,
+2012-07-03 11:38:51.5471,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0250738,
+2012-07-03 11:38:51.5471,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 4, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:38:51.5471,Raven.Database.Server.HttpServer,Debug,Request # 105: POST    -    27 ms - SomeDB     - 200 - /bulk_docs,
+2012-07-03 11:38:51.5611,Raven.Database.Server.HttpServer,Debug,"	DELETE UserModels/1
+",
+2012-07-03 11:38:51.5611,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Executing Index: Temp/UserModels, Keys: UserModels/1",
+2012-07-03 11:38:51.5611,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/1' was not found,
+2012-07-03 11:38:51.5611,Raven.Database.Indexing.Index.Indexing,Debug,Deleting (UserModels/1) from Temp/UserModels,
+2012-07-03 11:38:51.5911,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 5 because: WORK BY IndexingExecuter,
+2012-07-03 11:38:51.5911,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 5, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:38:51.5911,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 5, for: IndexingExecuter, will wait for additional work",
+2012-07-03 11:38:56.0111,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 11:38:56.0111,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/2' was found,
+2012-07-03 11:38:56.0111,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/3' was found,
+2012-07-03 11:38:56.0111,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/33' was found,
+2012-07-03 11:38:56.0111,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/34' was found,
+2012-07-03 11:38:56.0111,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/65' was found,
+2012-07-03 11:38:56.0111,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/66' was found,
+2012-07-03 11:38:56.0111,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/97' was found,
+2012-07-03 11:38:56.0111,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/129' was found,
+2012-07-03 11:38:56.0111,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/161' was found,
+2012-07-03 11:38:56.0111,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/193' was found,
+2012-07-03 11:38:56.0111,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/225' was found,
+2012-07-03 11:38:56.0111,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/226' was found,
+2012-07-03 11:38:56.0111,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/227' was found,
+2012-07-03 11:38:56.0561,Raven.Database.Server.HttpServer,Debug,Request # 106: GET     -    46 ms - SomeDB     - 200 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:38:56.0561,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 2 ms
+	Index: Temp/UserModels
+	Results: 13 returned out of 13 total.
+",
+2012-07-03 11:38:58.8121,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/2' was found,
+2012-07-03 11:38:58.8121,Raven.Database.Server.HttpServer,Debug,Request # 107: GET     -     0 ms - SomeDB     - 200 - /docs/UserModels/2,
+2012-07-03 11:38:58.8171,Raven.Database.DocumentDatabase,Debug,Delete a document with key: UserModels/2 and etag ,
+2012-07-03 11:38:58.8171,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/2' was deleted,
+2012-07-03 11:38:58.8171,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 6 because: DEL UserModels/2,
+2012-07-03 11:38:58.8171,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0035084,
+2012-07-03 11:38:58.8171,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Executing Index: Temp/UserModels, Keys: UserModels/2",
+2012-07-03 11:38:58.8171,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/2' was not found,
+2012-07-03 11:38:58.8171,Raven.Database.Server.HttpServer,Debug,Request # 108: POST    -     4 ms - SomeDB     - 200 - /bulk_docs,
+2012-07-03 11:38:58.8171,Raven.Database.Indexing.Index.Indexing,Debug,Deleting (UserModels/2) from Temp/UserModels,
+2012-07-03 11:38:58.8171,Raven.Database.Server.HttpServer,Debug,"	DELETE UserModels/2
+",
+2012-07-03 11:38:58.8171,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 6, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:38:58.8171,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 7 because: WORK BY IndexingExecuter,
+2012-07-03 11:38:58.8171,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 7, for: IndexingExecuter, will wait for additional work",
+2012-07-03 11:38:58.8171,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 7, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:39:02.2651,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/3' was found,
+2012-07-03 11:39:02.2651,Raven.Database.Server.HttpServer,Debug,Request # 109: GET     -     0 ms - SomeDB     - 200 - /docs/UserModels/3,
+2012-07-03 11:39:02.2651,Raven.Database.DocumentDatabase,Debug,Delete a document with key: UserModels/3 and etag ,
+2012-07-03 11:39:02.2651,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/3' was deleted,
+2012-07-03 11:39:02.2651,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 8 because: DEL UserModels/3,
+2012-07-03 11:39:02.2651,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0009398,
+2012-07-03 11:39:02.2651,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Executing Index: Temp/UserModels, Keys: UserModels/3",
+2012-07-03 11:39:02.2651,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/3' was not found,
+2012-07-03 11:39:02.2651,Raven.Database.Indexing.Index.Indexing,Debug,Deleting (UserModels/3) from Temp/UserModels,
+2012-07-03 11:39:02.2651,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 8, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:39:02.2651,Raven.Database.Server.HttpServer,Debug,Request # 110: POST    -     2 ms - SomeDB     - 200 - /bulk_docs,
+2012-07-03 11:39:02.2651,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 9 because: WORK BY IndexingExecuter,
+2012-07-03 11:39:02.2651,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 9, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:39:02.2651,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 9, for: IndexingExecuter, will wait for additional work",
+2012-07-03 11:39:02.2651,Raven.Database.Server.HttpServer,Debug,"	DELETE UserModels/3
+",
+2012-07-03 11:39:04.6191,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 11:39:04.6191,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/33' was found,
+2012-07-03 11:39:04.6191,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/34' was found,
+2012-07-03 11:39:04.6191,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/65' was found,
+2012-07-03 11:39:04.6191,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/66' was found,
+2012-07-03 11:39:04.6191,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/97' was found,
+2012-07-03 11:39:04.6191,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/129' was found,
+2012-07-03 11:39:04.6191,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/161' was found,
+2012-07-03 11:39:04.6191,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/193' was found,
+2012-07-03 11:39:04.6191,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/225' was found,
+2012-07-03 11:39:04.6191,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/226' was found,
+2012-07-03 11:39:04.6191,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/227' was found,
+2012-07-03 11:39:04.6561,Raven.Database.Server.HttpServer,Debug,Request # 111: GET     -    37 ms - SomeDB     - 200 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:39:04.6561,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 2 ms
+	Index: Temp/UserModels
+	Results: 11 returned out of 11 total.
+",
+2012-07-03 11:39:06.9471,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/33' was found,
+2012-07-03 11:39:06.9471,Raven.Database.Server.HttpServer,Debug,Request # 112: GET     -     2 ms - SomeDB     - 200 - /docs/UserModels/33,
+2012-07-03 11:39:06.9471,Raven.Database.DocumentDatabase,Debug,Delete a document with key: UserModels/33 and etag ,
+2012-07-03 11:39:06.9471,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/33' was deleted,
+2012-07-03 11:39:06.9591,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 10 because: DEL UserModels/33,
+2012-07-03 11:39:06.9591,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0044532,
+2012-07-03 11:39:06.9591,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 10, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:39:06.9591,Raven.Database.Server.HttpServer,Debug,Request # 113: POST    -     5 ms - SomeDB     - 200 - /bulk_docs,
+2012-07-03 11:39:06.9591,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Executing Index: Temp/UserModels, Keys: UserModels/33",
+2012-07-03 11:39:06.9591,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/33' was not found,
+2012-07-03 11:39:06.9591,Raven.Database.Indexing.Index.Indexing,Debug,Deleting (UserModels/33) from Temp/UserModels,
+2012-07-03 11:39:06.9591,Raven.Database.Server.HttpServer,Debug,"	DELETE UserModels/33
+",
+2012-07-03 11:39:06.9591,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 11 because: WORK BY IndexingExecuter,
+2012-07-03 11:39:06.9591,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 11, for: IndexingExecuter, will wait for additional work",
+2012-07-03 11:39:06.9591,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 11, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:39:09.7221,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/34' was found,
+2012-07-03 11:39:09.7221,Raven.Database.Server.HttpServer,Debug,Request # 114: GET     -     2 ms - SomeDB     - 200 - /docs/UserModels/34,
+2012-07-03 11:39:09.7221,Raven.Database.DocumentDatabase,Debug,Delete a document with key: UserModels/34 and etag ,
+2012-07-03 11:39:09.7221,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/34' was deleted,
+2012-07-03 11:39:09.7341,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 12 because: DEL UserModels/34,
+2012-07-03 11:39:09.7341,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0036052,
+2012-07-03 11:39:09.7341,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Executing Index: Temp/UserModels, Keys: UserModels/34",
+2012-07-03 11:39:09.7341,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/34' was not found,
+2012-07-03 11:39:09.7341,Raven.Database.Indexing.Index.Indexing,Debug,Deleting (UserModels/34) from Temp/UserModels,
+2012-07-03 11:39:09.7341,Raven.Database.Server.HttpServer,Debug,Request # 115: POST    -     4 ms - SomeDB     - 200 - /bulk_docs,
+2012-07-03 11:39:09.7341,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 12, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:39:09.7341,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 13 because: WORK BY IndexingExecuter,
+2012-07-03 11:39:09.7341,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 13, for: IndexingExecuter, will wait for additional work",
+2012-07-03 11:39:09.7341,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 13, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:39:09.7341,Raven.Database.Server.HttpServer,Debug,"	DELETE UserModels/34
+",
+2012-07-03 11:39:11.8261,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/65' was found,
+2012-07-03 11:39:11.8261,Raven.Database.Server.HttpServer,Debug,Request # 116: GET     -     2 ms - SomeDB     - 200 - /docs/UserModels/65,
+2012-07-03 11:39:11.8261,Raven.Database.DocumentDatabase,Debug,Delete a document with key: UserModels/65 and etag ,
+2012-07-03 11:39:11.8261,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/65' was deleted,
+2012-07-03 11:39:11.8261,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 14 because: DEL UserModels/65,
+2012-07-03 11:39:11.8261,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0034463,
+2012-07-03 11:39:11.8261,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Executing Index: Temp/UserModels, Keys: UserModels/65",
+2012-07-03 11:39:11.8261,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/65' was not found,
+2012-07-03 11:39:11.8261,Raven.Database.Indexing.Index.Indexing,Debug,Deleting (UserModels/65) from Temp/UserModels,
+2012-07-03 11:39:11.8261,Raven.Database.Server.HttpServer,Debug,Request # 117: POST    -     4 ms - SomeDB     - 200 - /bulk_docs,
+2012-07-03 11:39:11.8261,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 14, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:39:11.8261,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 15 because: WORK BY IndexingExecuter,
+2012-07-03 11:39:11.8261,Raven.Database.Server.HttpServer,Debug,"	DELETE UserModels/65
+",
+2012-07-03 11:39:11.8261,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 15, for: IndexingExecuter, will wait for additional work",
+2012-07-03 11:39:11.8261,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 15, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:39:14.0421,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/66' was found,
+2012-07-03 11:39:14.0421,Raven.Database.Server.HttpServer,Debug,Request # 118: GET     -     2 ms - SomeDB     - 200 - /docs/UserModels/66,
+2012-07-03 11:39:14.0421,Raven.Database.DocumentDatabase,Debug,Delete a document with key: UserModels/66 and etag ,
+2012-07-03 11:39:14.0421,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/66' was deleted,
+2012-07-03 11:39:14.0421,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 16 because: DEL UserModels/66,
+2012-07-03 11:39:14.0421,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0033170,
+2012-07-03 11:39:14.0421,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Executing Index: Temp/UserModels, Keys: UserModels/66",
+2012-07-03 11:39:14.0421,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/66' was not found,
+2012-07-03 11:39:14.0421,Raven.Database.Indexing.Index.Indexing,Debug,Deleting (UserModels/66) from Temp/UserModels,
+2012-07-03 11:39:14.0421,Raven.Database.Server.HttpServer,Debug,Request # 119: POST    -     4 ms - SomeDB     - 200 - /bulk_docs,
+2012-07-03 11:39:14.0421,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 16, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:39:14.0421,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 17 because: WORK BY IndexingExecuter,
+2012-07-03 11:39:14.0551,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 17, for: IndexingExecuter, will wait for additional work",
+2012-07-03 11:39:14.0421,Raven.Database.Server.HttpServer,Debug,"	DELETE UserModels/66
+",
+2012-07-03 11:39:14.0551,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 17, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:39:16.2111,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/97' was found,
+2012-07-03 11:39:16.2411,Raven.Database.Server.HttpServer,Debug,Request # 120: GET     -    32 ms - SomeDB     - 200 - /docs/UserModels/97,
+2012-07-03 11:39:16.2621,Raven.Database.DocumentDatabase,Debug,Delete a document with key: UserModels/97 and etag ,
+2012-07-03 11:39:16.2621,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/97' was deleted,
+2012-07-03 11:39:16.2621,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 18 because: DEL UserModels/97,
+2012-07-03 11:39:16.2621,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0034100,
+2012-07-03 11:39:16.2621,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Executing Index: Temp/UserModels, Keys: UserModels/97",
+2012-07-03 11:39:16.2621,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/97' was not found,
+2012-07-03 11:39:16.2621,Raven.Database.Server.HttpServer,Debug,Request # 121: POST    -     4 ms - SomeDB     - 200 - /bulk_docs,
+2012-07-03 11:39:16.2621,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 18, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:39:16.2621,Raven.Database.Indexing.Index.Indexing,Debug,Deleting (UserModels/97) from Temp/UserModels,
+2012-07-03 11:39:16.2621,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 19 because: WORK BY IndexingExecuter,
+2012-07-03 11:39:16.2621,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 19, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:39:16.2621,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 19, for: IndexingExecuter, will wait for additional work",
+2012-07-03 11:39:16.2621,Raven.Database.Server.HttpServer,Debug,"	DELETE UserModels/97
+",
+2012-07-03 11:39:18.6261,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/129' was found,
+2012-07-03 11:39:18.6261,Raven.Database.Server.HttpServer,Debug,Request # 122: GET     -     0 ms - SomeDB     - 200 - /docs/UserModels/129,
+2012-07-03 11:39:18.6261,Raven.Database.DocumentDatabase,Debug,Delete a document with key: UserModels/129 and etag ,
+2012-07-03 11:39:18.6261,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/129' was deleted,
+2012-07-03 11:39:18.6261,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 20 because: DEL UserModels/129,
+2012-07-03 11:39:18.6261,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0042568,
+2012-07-03 11:39:18.6261,Raven.Database.Server.HttpServer,Debug,Request # 123: POST    -     5 ms - SomeDB     - 200 - /bulk_docs,
+2012-07-03 11:39:18.6261,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 20, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:39:18.6261,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Executing Index: Temp/UserModels, Keys: UserModels/129",
+2012-07-03 11:39:18.6261,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/129' was not found,
+2012-07-03 11:39:18.6261,Raven.Database.Server.HttpServer,Debug,"	DELETE UserModels/129
+",
+2012-07-03 11:39:18.6261,Raven.Database.Indexing.Index.Indexing,Debug,Deleting (UserModels/129) from Temp/UserModels,
+2012-07-03 11:39:18.6261,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 21 because: WORK BY IndexingExecuter,
+2012-07-03 11:39:18.6261,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 21, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:39:18.6261,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 21, for: IndexingExecuter, will wait for additional work",
+2012-07-03 11:39:20.9141,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/227' was found,
+2012-07-03 11:39:20.9141,Raven.Database.Server.HttpServer,Debug,Request # 124: GET     -     0 ms - SomeDB     - 200 - /docs/UserModels/227,
+2012-07-03 11:39:20.9191,Raven.Database.DocumentDatabase,Debug,Delete a document with key: UserModels/227 and etag ,
+2012-07-03 11:39:20.9191,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/227' was deleted,
+2012-07-03 11:39:20.9191,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 22 because: DEL UserModels/227,
+2012-07-03 11:39:20.9191,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0036035,
+2012-07-03 11:39:20.9191,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Executing Index: Temp/UserModels, Keys: UserModels/227",
+2012-07-03 11:39:20.9191,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/227' was not found,
+2012-07-03 11:39:20.9191,Raven.Database.Server.HttpServer,Debug,Request # 125: POST    -     4 ms - SomeDB     - 200 - /bulk_docs,
+2012-07-03 11:39:20.9191,Raven.Database.Indexing.Index.Indexing,Debug,Deleting (UserModels/227) from Temp/UserModels,
+2012-07-03 11:39:20.9191,Raven.Database.Server.HttpServer,Debug,"	DELETE UserModels/227
+",
+2012-07-03 11:39:20.9191,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 22, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:39:20.9191,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 23 because: WORK BY IndexingExecuter,
+2012-07-03 11:39:20.9191,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 23, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:39:20.9191,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 23, for: IndexingExecuter, will wait for additional work",
+2012-07-03 11:39:23.1291,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 11:39:23.1291,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/161' was found,
+2012-07-03 11:39:23.1291,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/193' was found,
+2012-07-03 11:39:23.1291,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/225' was found,
+2012-07-03 11:39:23.1291,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/226' was found,
+2012-07-03 11:39:23.1291,Raven.Database.Server.HttpServer,Debug,Request # 126: GET     -     2 ms - SomeDB     - 200 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:39:23.1291,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 1 ms
+	Index: Temp/UserModels
+	Results: 4 returned out of 4 total.
+",
+2012-07-03 11:39:25.1071,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/161' was found,
+2012-07-03 11:39:25.1071,Raven.Database.Server.HttpServer,Debug,Request # 127: GET     -     0 ms - SomeDB     - 200 - /docs/UserModels/161,
+2012-07-03 11:39:25.1071,Raven.Database.DocumentDatabase,Debug,Delete a document with key: UserModels/161 and etag ,
+2012-07-03 11:39:25.1071,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/161' was deleted,
+2012-07-03 11:39:25.1151,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 24 because: DEL UserModels/161,
+2012-07-03 11:39:25.1151,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0030734,
+2012-07-03 11:39:25.1151,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Executing Index: Temp/UserModels, Keys: UserModels/161",
+2012-07-03 11:39:25.1151,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/161' was not found,
+2012-07-03 11:39:25.1151,Raven.Database.Indexing.Index.Indexing,Debug,Deleting (UserModels/161) from Temp/UserModels,
+2012-07-03 11:39:25.1151,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 24, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:39:25.1151,Raven.Database.Server.HttpServer,Debug,Request # 128: POST    -     4 ms - SomeDB     - 200 - /bulk_docs,
+2012-07-03 11:39:25.1151,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 25 because: WORK BY IndexingExecuter,
+2012-07-03 11:39:25.1151,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 25, for: IndexingExecuter, will wait for additional work",
+2012-07-03 11:39:25.1151,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 25, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:39:25.1151,Raven.Database.Server.HttpServer,Debug,"	DELETE UserModels/161
+",
+2012-07-03 11:39:26.8341,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/193' was found,
+2012-07-03 11:39:26.8341,Raven.Database.Server.HttpServer,Debug,Request # 129: GET     -     0 ms - SomeDB     - 200 - /docs/UserModels/193,
+2012-07-03 11:39:26.8341,Raven.Database.DocumentDatabase,Debug,Delete a document with key: UserModels/193 and etag ,
+2012-07-03 11:39:26.8341,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/193' was deleted,
+2012-07-03 11:39:26.8341,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 26 because: DEL UserModels/193,
+2012-07-03 11:39:26.8341,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0031708,
+2012-07-03 11:39:26.8341,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Executing Index: Temp/UserModels, Keys: UserModels/193",
+2012-07-03 11:39:26.8341,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/193' was not found,
+2012-07-03 11:39:26.8341,Raven.Database.Indexing.Index.Indexing,Debug,Deleting (UserModels/193) from Temp/UserModels,
+2012-07-03 11:39:26.8341,Raven.Database.Server.HttpServer,Debug,Request # 130: POST    -     4 ms - SomeDB     - 200 - /bulk_docs,
+2012-07-03 11:39:26.8341,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 26, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:39:26.8341,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 27 because: WORK BY IndexingExecuter,
+2012-07-03 11:39:26.8341,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 27, for: IndexingExecuter, will wait for additional work",
+2012-07-03 11:39:26.8341,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 27, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:39:26.8341,Raven.Database.Server.HttpServer,Debug,"	DELETE UserModels/193
+",
+2012-07-03 11:39:28.0661,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/225' was found,
+2012-07-03 11:39:28.0661,Raven.Database.Server.HttpServer,Debug,Request # 131: GET     -     0 ms - SomeDB     - 200 - /docs/UserModels/225,
+2012-07-03 11:39:28.0661,Raven.Database.DocumentDatabase,Debug,Delete a document with key: UserModels/225 and etag ,
+2012-07-03 11:39:28.0661,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/225' was deleted,
+2012-07-03 11:39:28.0661,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 28 because: DEL UserModels/225,
+2012-07-03 11:39:28.0661,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0024036,
+2012-07-03 11:39:28.0661,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Executing Index: Temp/UserModels, Keys: UserModels/225",
+2012-07-03 11:39:28.0661,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/225' was not found,
+2012-07-03 11:39:28.0661,Raven.Database.Indexing.Index.Indexing,Debug,Deleting (UserModels/225) from Temp/UserModels,
+2012-07-03 11:39:28.0661,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 28, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:39:28.0661,Raven.Database.Server.HttpServer,Debug,Request # 132: POST    -     3 ms - SomeDB     - 200 - /bulk_docs,
+2012-07-03 11:39:28.0661,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 29 because: WORK BY IndexingExecuter,
+2012-07-03 11:39:28.0661,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 29, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:39:28.0661,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 29, for: IndexingExecuter, will wait for additional work",
+2012-07-03 11:39:28.0661,Raven.Database.Server.HttpServer,Debug,"	DELETE UserModels/225
+",
+2012-07-03 11:39:29.3071,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/226' was found,
+2012-07-03 11:39:29.3071,Raven.Database.Server.HttpServer,Debug,Request # 133: GET     -     0 ms - SomeDB     - 200 - /docs/UserModels/226,
+2012-07-03 11:39:29.3121,Raven.Database.DocumentDatabase,Debug,Delete a document with key: UserModels/226 and etag ,
+2012-07-03 11:39:29.3121,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/226' was deleted,
+2012-07-03 11:39:29.3121,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 30 because: DEL UserModels/226,
+2012-07-03 11:39:29.3121,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0064097,
+2012-07-03 11:39:29.3121,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Executing Index: Temp/UserModels, Keys: UserModels/226",
+2012-07-03 11:39:29.3121,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/226' was not found,
+2012-07-03 11:39:29.3121,Raven.Database.Indexing.Index.Indexing,Debug,Deleting (UserModels/226) from Temp/UserModels,
+2012-07-03 11:39:29.3121,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 30, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:39:29.3121,Raven.Database.Server.HttpServer,Debug,Request # 134: POST    -     7 ms - SomeDB     - 200 - /bulk_docs,
+2012-07-03 11:39:29.3121,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 31 because: WORK BY IndexingExecuter,
+2012-07-03 11:39:29.3121,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 31, for: IndexingExecuter, will wait for additional work",
+2012-07-03 11:39:29.3121,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 31, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:39:29.3121,Raven.Database.Server.HttpServer,Debug,"	DELETE UserModels/226
+",
+2012-07-03 11:39:30.4561,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 11:39:30.4561,Raven.Database.Server.HttpServer,Debug,Request # 135: GET     -     1 ms - SomeDB     - 200 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:39:30.4561,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+	Index: Temp/UserModels
+	Results: 0 returned out of 0 total.
+",
+2012-07-03 11:45:50.0417,Raven.Database.Server.HttpServer,Debug,Request # 136: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:45:50.0417,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:45:50.0417,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-07-03 11:45:50.0417,Raven.Database.Server.HttpServer,Debug,Request # 137: GET     -     0 ms - SomeDB     - 404 - /docs/Raven/Replication/Destinations,
+2012-07-03 11:46:06.9277,Raven.Database.Server.HttpServer,Debug,Request # 138: GET     -     0 ms - SomeDB     - 304 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:46:06.9277,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+",
+2012-07-03 11:46:26.9645,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/UserModels' was found,
+2012-07-03 11:46:26.9655,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/ServerPrefixForHilo' was not found,
+2012-07-03 11:46:26.9655,Raven.Database.Server.HttpServer,Debug,Request # 139: GET     -     0 ms - SomeDB     - 200 - /queries/?&id=Raven/Hilo/UserModels&id=Raven/ServerPrefixForHilo,
+2012-07-03 11:46:26.9835,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'Raven/Hilo/UserModels', update: True, ",
+2012-07-03 11:46:26.9835,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 32 because: PUT Raven/Hilo/UserModels,
+2012-07-03 11:46:26.9835,Raven.Database.DocumentDatabase,Debug,Put document Raven/Hilo/UserModels with etag 00000000-0000-0600-0000-000000000001,
+2012-07-03 11:46:26.9835,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0500-0000-00000000000a,
+2012-07-03 11:46:26.9835,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 32, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:46:26.9835,Raven.Database.Impl.DocumentRetriever,Debug,Triggered Raven.Database.Plugins.Builtins.FilterRavenInternalDocumentsReadTrigger asked us to ignore Raven/Hilo/UserModels,
+2012-07-03 11:46:26.9835,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 0 documents remained",
+2012-07-03 11:46:26.9835,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"All documents have been filtered for Temp/UserModels, no indexing will be performed, updating to 00000000-0000-0600-0000-000000000001, 03/07/2012 6:46:26 PM",
+2012-07-03 11:46:26.9835,Raven.Database.Server.HttpServer,Debug,Request # 140: PUT     -     5 ms - SomeDB     - 201 - /docs/Raven/Hilo/UserModels,
+2012-07-03 11:46:26.9835,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 33 because: WORK BY IndexingExecuter,
+2012-07-03 11:46:26.9835,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 33, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:46:26.9835,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 33, for: IndexingExecuter, will wait for additional work",
+2012-07-03 11:46:27.0145,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'UserModels/257', update: False, ",
+2012-07-03 11:46:27.0145,Raven.Database.DocumentDatabase,Debug,Put document UserModels/257 with etag 00000000-0000-0600-0000-000000000002,
+2012-07-03 11:46:27.0145,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 34 because: PUT UserModels/257,
+2012-07-03 11:46:27.0145,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0011553,
+2012-07-03 11:46:27.0145,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0600-0000-000000000001,
+2012-07-03 11:46:27.0145,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 34, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:46:27.0145,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 1 documents remained",
+2012-07-03 11:46:27.0145,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Going to index 1 documents in IndexName: Temp/UserModels, LastIndexedEtag: 00000000-0000-0600-0000-000000000001",
+2012-07-03 11:46:27.0145,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Indexing 1 documents for index: Temp/UserModels. (UserModels/257),
+2012-07-03 11:46:27.0145,Raven.Database.Server.HttpServer,Debug,Request # 141: POST    -     2 ms - SomeDB     - 200 - /bulk_docs,
+2012-07-03 11:46:27.0145,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/257 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/257
+",
+2012-07-03 11:46:27.0145,Raven.Database.Indexing.Index.Indexing,Debug,Indexed 3 documents for Temp/UserModels,
+2012-07-03 11:46:27.0145,Raven.Database.Server.HttpServer,Debug,"	PUT UserModels/257
+",
+2012-07-03 11:46:27.0145,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 35 because: WORK BY IndexingExecuter,
+2012-07-03 11:46:27.0145,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 35, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:46:27.0145,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 35, for: IndexingExecuter, will wait for additional work",
+2012-07-03 11:46:27.0145,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 11:46:27.0275,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/257' was found,
+2012-07-03 11:46:27.0275,Raven.Database.Server.HttpServer,Debug,Request # 142: GET     -     1 ms - SomeDB     - 200 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:46:27.0275,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 1 ms
+	Index: Temp/UserModels
+	Results: 1 returned out of 1 total.
+",
+2012-07-03 11:46:46.6372,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/257' was found,
+2012-07-03 11:46:46.6372,Raven.Database.Server.HttpServer,Debug,Request # 143: GET     -     0 ms - SomeDB     - 200 - /docs/UserModels/257,
+2012-07-03 11:46:46.6372,Raven.Database.DocumentDatabase,Debug,Delete a document with key: UserModels/257 and etag ,
+2012-07-03 11:46:46.6372,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/257' was deleted,
+2012-07-03 11:46:46.6372,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 36 because: DEL UserModels/257,
+2012-07-03 11:46:46.6372,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0033445,
+2012-07-03 11:46:46.6372,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Executing Index: Temp/UserModels, Keys: UserModels/257",
+2012-07-03 11:46:46.6372,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 36, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:46:46.6372,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/257' was not found,
+2012-07-03 11:46:46.6372,Raven.Database.Indexing.Index.Indexing,Debug,Deleting (UserModels/257) from Temp/UserModels,
+2012-07-03 11:46:46.6372,Raven.Database.Server.HttpServer,Debug,Request # 144: POST    -     4 ms - SomeDB     - 200 - /bulk_docs,
+2012-07-03 11:46:46.6372,Raven.Database.Server.HttpServer,Debug,"	DELETE UserModels/257
+",
+2012-07-03 11:46:46.6372,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 37 because: WORK BY IndexingExecuter,
+2012-07-03 11:46:46.6372,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 37, for: IndexingExecuter, will wait for additional work",
+2012-07-03 11:46:46.6372,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 37, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:47:09.6275,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'UserModels/258', update: False, ",
+2012-07-03 11:47:09.6275,Raven.Database.DocumentDatabase,Debug,Put document UserModels/258 with etag 00000000-0000-0600-0000-000000000003,
+2012-07-03 11:47:09.6275,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 38 because: PUT UserModels/258,
+2012-07-03 11:47:09.6275,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0030300,
+2012-07-03 11:47:09.6275,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0600-0000-000000000002,
+2012-07-03 11:47:09.6315,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 38, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:47:09.6315,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 1 documents remained",
+2012-07-03 11:47:09.6315,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Going to index 1 documents in IndexName: Temp/UserModels, LastIndexedEtag: 00000000-0000-0600-0000-000000000002",
+2012-07-03 11:47:09.6315,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Indexing 1 documents for index: Temp/UserModels. (UserModels/258),
+2012-07-03 11:47:09.6315,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/258 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/258
+",
+2012-07-03 11:47:09.6315,Raven.Database.Indexing.Index.Indexing,Debug,Indexed 3 documents for Temp/UserModels,
+2012-07-03 11:47:09.6275,Raven.Database.Server.HttpServer,Debug,Request # 145: POST    -     4 ms - SomeDB     - 200 - /bulk_docs,
+2012-07-03 11:47:09.6315,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 39 because: WORK BY IndexingExecuter,
+2012-07-03 11:47:09.6315,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 39, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:47:09.6315,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 39, for: IndexingExecuter, will wait for additional work",
+2012-07-03 11:47:09.6315,Raven.Database.Server.HttpServer,Debug,"	PUT UserModels/258
+",
+2012-07-03 11:47:09.6315,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 11:47:09.6315,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/258' was found,
+2012-07-03 11:47:09.6315,Raven.Database.Server.HttpServer,Debug,Request # 146: GET     -     1 ms - SomeDB     - 200 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:47:09.6315,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+	Index: Temp/UserModels
+	Results: 1 returned out of 1 total.
+",
+2012-07-03 11:47:12.2108,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/258' was found,
+2012-07-03 11:47:12.2108,Raven.Database.Server.HttpServer,Debug,Request # 147: GET     -     0 ms - SomeDB     - 200 - /docs/UserModels/258,
+2012-07-03 11:47:12.2108,Raven.Database.DocumentDatabase,Debug,Delete a document with key: UserModels/258 and etag ,
+2012-07-03 11:47:12.2108,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/258' was deleted,
+2012-07-03 11:47:12.2108,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 40 because: DEL UserModels/258,
+2012-07-03 11:47:12.2108,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0031455,
+2012-07-03 11:47:12.2108,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Executing Index: Temp/UserModels, Keys: UserModels/258",
+2012-07-03 11:47:12.2108,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/258' was not found,
+2012-07-03 11:47:12.2108,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 40, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:47:12.2108,Raven.Database.Indexing.Index.Indexing,Debug,Deleting (UserModels/258) from Temp/UserModels,
+2012-07-03 11:47:12.2108,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 41 because: WORK BY IndexingExecuter,
+2012-07-03 11:47:12.2108,Raven.Database.Server.HttpServer,Debug,Request # 148: POST    -     4 ms - SomeDB     - 200 - /bulk_docs,
+2012-07-03 11:47:12.2108,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 41, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:47:12.2108,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 41, for: IndexingExecuter, will wait for additional work",
+2012-07-03 11:47:12.2108,Raven.Database.Server.HttpServer,Debug,"	DELETE UserModels/258
+",
+2012-07-03 11:48:18.4345,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-07-03 11:48:18.4345,Raven.Database.Server.HttpServer,Debug,Request # 149: GET     -     0 ms - SomeDB     - 404 - /docs/Raven/Replication/Destinations,
+2012-07-03 11:48:18.5285,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Databases/SomeDB' was found,
+2012-07-03 11:48:18.5285,Raven.Database.Server.HttpServer,Debug,Request # 150: GET     -     4 ms - <default>  - 200 - /docs/Raven/Databases/SomeDB,
+2012-07-03 11:48:20.8257,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 11:48:20.8257,Raven.Database.Server.HttpServer,Debug,Request # 151: GET     -     1 ms - SomeDB     - 200 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:48:20.8257,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 0 ms
+	Index: Temp/UserModels
+	Results: 0 returned out of 0 total.
+",
+2012-07-03 11:50:37.4110,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-07-03 11:50:37.4110,Raven.Database.Server.HttpServer,Debug,Request # 152: GET     -     0 ms - SomeDB     - 404 - /docs/Raven/Replication/Destinations,
+2012-07-03 11:50:37.6001,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Databases/SomeDB' was found,
+2012-07-03 11:50:37.6001,Raven.Database.Server.HttpServer,Debug,Request # 153: GET     -     0 ms - <default>  - 200 - /docs/Raven/Databases/SomeDB,
+2012-07-03 11:51:10.1181,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-07-03 11:51:10.1181,Raven.Database.Server.HttpServer,Debug,Request # 154: GET     -     0 ms - SomeDB     - 404 - /docs/Raven/Replication/Destinations,
+2012-07-03 11:51:10.2111,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Databases/SomeDB' was found,
+2012-07-03 11:51:10.2111,Raven.Database.Server.HttpServer,Debug,Request # 155: GET     -     0 ms - <default>  - 200 - /docs/Raven/Databases/SomeDB,
+2012-07-03 11:52:48.9902,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-07-03 11:52:48.9902,Raven.Database.Server.HttpServer,Debug,Request # 156: GET     -     1 ms - SomeDB     - 404 - /docs/Raven/Replication/Destinations,
+2012-07-03 11:52:49.1352,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Databases/SomeDB' was found,
+2012-07-03 11:52:49.1352,Raven.Database.Server.HttpServer,Debug,Request # 157: GET     -     0 ms - <default>  - 200 - /docs/Raven/Databases/SomeDB,
+2012-07-03 11:53:07.9240,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Replication/Destinations' was not found,
+2012-07-03 11:53:07.9240,Raven.Database.Server.HttpServer,Debug,Request # 158: GET     -     0 ms - SomeDB     - 404 - /docs/Raven/Replication/Destinations,
+2012-07-03 11:53:08.0811,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Databases/SomeDB' was found,
+2012-07-03 11:53:08.0811,Raven.Database.Server.HttpServer,Debug,Request # 159: GET     -     0 ms - <default>  - 200 - /docs/Raven/Databases/SomeDB,
+2012-07-03 11:53:28.7421,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/Hilo/UserModels' was found,
+2012-07-03 11:53:28.7421,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'Raven/ServerPrefixForHilo' was not found,
+2012-07-03 11:53:28.7421,Raven.Database.Server.HttpServer,Debug,Request # 160: GET     -     0 ms - SomeDB     - 200 - /queries/?&id=Raven/Hilo/UserModels&id=Raven/ServerPrefixForHilo,
+2012-07-03 11:53:28.7771,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'Raven/Hilo/UserModels', update: True, ",
+2012-07-03 11:53:28.7771,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 42 because: PUT Raven/Hilo/UserModels,
+2012-07-03 11:53:28.7771,Raven.Database.DocumentDatabase,Debug,Put document Raven/Hilo/UserModels with etag 00000000-0000-0600-0000-000000000004,
+2012-07-03 11:53:28.7771,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0600-0000-000000000003,
+2012-07-03 11:53:28.7771,Raven.Database.Server.HttpServer,Debug,Request # 161: PUT     -     4 ms - SomeDB     - 201 - /docs/Raven/Hilo/UserModels,
+2012-07-03 11:53:28.7771,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 42, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:53:28.7771,Raven.Database.Impl.DocumentRetriever,Debug,Triggered Raven.Database.Plugins.Builtins.FilterRavenInternalDocumentsReadTrigger asked us to ignore Raven/Hilo/UserModels,
+2012-07-03 11:53:28.7771,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 0 documents remained",
+2012-07-03 11:53:28.7771,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"All documents have been filtered for Temp/UserModels, no indexing will be performed, updating to 00000000-0000-0600-0000-000000000004, 03/07/2012 6:53:28 PM",
+2012-07-03 11:53:28.7771,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 43 because: WORK BY IndexingExecuter,
+2012-07-03 11:53:28.7771,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 43, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:53:28.7771,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 43, for: IndexingExecuter, will wait for additional work",
+2012-07-03 11:53:28.8611,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Inserted a new document with key 'UserModels/289', update: False, ",
+2012-07-03 11:53:28.8611,Raven.Database.DocumentDatabase,Debug,Put document UserModels/289 with etag 00000000-0000-0600-0000-000000000005,
+2012-07-03 11:53:28.8611,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 44 because: PUT UserModels/289,
+2012-07-03 11:53:28.8611,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0037306,
+2012-07-03 11:53:28.8611,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Found a total of 1 documents that requires indexing since etag: 00000000-0000-0600-0000-000000000004,
+2012-07-03 11:53:28.8611,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 44, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:53:28.8611,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"After read triggers executed, 1 documents remained",
+2012-07-03 11:53:28.8611,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Going to index 1 documents in IndexName: Temp/UserModels, LastIndexedEtag: 00000000-0000-0600-0000-000000000004",
+2012-07-03 11:53:28.8611,Raven.Database.Server.HttpServer,Debug,Request # 162: POST    -     5 ms - SomeDB     - 200 - /bulk_docs,
+2012-07-03 11:53:28.8611,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,Indexing 1 documents for index: Temp/UserModels. (UserModels/289),
+2012-07-03 11:53:28.8611,Raven.Database.Indexing.Index.Indexing,Debug,"Indexing on UserModels/289 result in index Temp/UserModels gave document: 	__document_id IS: usermodels/289
+",
+2012-07-03 11:53:28.8611,Raven.Database.Server.HttpServer,Debug,"	PUT UserModels/289
+",
+2012-07-03 11:53:28.8611,Raven.Database.Indexing.Index.Indexing,Debug,Indexed 3 documents for Temp/UserModels,
+2012-07-03 11:53:28.8611,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 45 because: WORK BY IndexingExecuter,
+2012-07-03 11:53:28.8611,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 45, for: IndexingExecuter, will wait for additional work",
+2012-07-03 11:53:28.8611,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 45, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:53:28.9381,Raven.Database.Indexing.Index.Querying,Debug,Issuing query on index Temp/UserModels for all documents,
+2012-07-03 11:53:28.9381,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'usermodels/289' was found,
+2012-07-03 11:53:28.9381,Raven.Database.Server.HttpServer,Debug,Request # 163: GET     -     1 ms - SomeDB     - 200 - /indexes/dynamic/UserModels?query=&start=0&pageSize=128&aggregation=None,
+2012-07-03 11:53:28.9381,Raven.Database.Server.HttpServer,Debug,"	Query: 
+	Time: 1 ms
+	Index: Temp/UserModels
+	Results: 1 returned out of 1 total.
+",
+2012-07-03 11:53:36.1649,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/289' was found,
+2012-07-03 11:53:36.1649,Raven.Database.Server.HttpServer,Debug,Request # 164: GET     -     0 ms - SomeDB     - 200 - /docs/UserModels/289,
+2012-07-03 11:53:36.1849,Raven.Database.DocumentDatabase,Debug,Delete a document with key: UserModels/289 and etag ,
+2012-07-03 11:53:36.1849,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/289' was deleted,
+2012-07-03 11:53:36.1889,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 46 because: DEL UserModels/289,
+2012-07-03 11:53:36.1889,Raven.Database.DocumentDatabase,Debug,Successfully executed 1 commands in 00:00:00.0039978,
+2012-07-03 11:53:36.1889,Raven.Database.Indexing.AbstractIndexingExecuter,Debug,"Executing Index: Temp/UserModels, Keys: UserModels/289",
+2012-07-03 11:53:36.1889,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,Document with key 'UserModels/289' was not found,
+2012-07-03 11:53:36.1889,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 46, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:53:36.1889,Raven.Database.Indexing.Index.Indexing,Debug,Deleting (UserModels/289) from Temp/UserModels,
+2012-07-03 11:53:36.1889,Raven.Database.Server.HttpServer,Debug,Request # 165: POST    -     5 ms - SomeDB     - 200 - /bulk_docs,
+2012-07-03 11:53:36.1889,Raven.Database.Indexing.WorkContext,Debug,Incremented work counter to 47 because: WORK BY IndexingExecuter,
+2012-07-03 11:53:36.1889,Raven.Database.Server.HttpServer,Debug,"	DELETE UserModels/289
+",
+2012-07-03 11:53:36.1889,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 47, for: ReducingExecuter, will wait for additional work",
+2012-07-03 11:53:36.1889,Raven.Database.Indexing.WorkContext,Debug,"No work was found, workerWorkCounter: 47, for: IndexingExecuter, will wait for additional work",
